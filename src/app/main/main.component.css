@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+app-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+app-sidebar {
+    position: fixed;
+    top: 60px; /* height of the header */
+    left: 0;
+    width: 200px;
+    height: calc(100% - 60px); /* full height minus the header */
+    background-color: #444;
+    color: #fff;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+app-body {
+    margin-top: 100px; 
+    margin-left: 200px; 
+    padding: 20px;
+    flex: 1;
+    background-color: #f0f0f0;
+    position: static;
+}
