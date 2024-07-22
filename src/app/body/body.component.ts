@@ -8,6 +8,7 @@ import { BodyService } from './body.service';
 })
 export class BodyComponent {
   starCount: number | undefined;
+  contributors: any[] = [];
   owner: string = 'RatingRishu';
   repo: string = 'InfoHub';
 
@@ -16,6 +17,10 @@ export class BodyComponent {
   ngOnInit(): void {
     this.bodyService.getStarCount(this.owner, this.repo).subscribe(data => {
       this.starCount = data.stargazers_count;
+    });
+
+    this.bodyService.getContributors(this.owner, this.repo).subscribe(data => {
+      this.contributors = data;
     });
   }
 }

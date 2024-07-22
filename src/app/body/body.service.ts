@@ -13,4 +13,7 @@ export class BodyService {
   getStarCount(owner: string, repo: string): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/${owner}/${repo}`);
   }
+  getContributors(owner: string, repo: string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/${owner}/${repo}/contributors`);
+  }
 }
