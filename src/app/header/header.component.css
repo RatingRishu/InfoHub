@@ -3,21 +3,21 @@
     height: 100px;
     border-radius: 100%;
 } */
-.navbar-brand h1{
+.navbar-brand h3{
     margin-left: 15%;
     color: #AA336A;
 }
 @media (max-width: 768px) {
-    .navbar-brand h1,h3{
+    .navbar-brand h3,h5{
         text-align: center;
     }
 }
 @media (max-width: 321px) {
-    .navbar-brand h1{
+    .navbar-brand h3{
         margin-left: 35%;
         /* text-align: center; */
     }
-    .navbar-brand h3{
+    .navbar-brand h5{
         margin-left: 21%;
         /* text-align: center; */
     }
