@@ -1,0 +1,99 @@
+body {
+    background-color: #fee440;
+}
+svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+}
+a:hover {
+    text-decoration: underline;
+}
+a img.icon {
+    display: inline-block;
+    height: 1em;
+    margin: 0 0 -0.1em 0.3em;
+}
+
+body {
+    background-color: #fee440;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .out-top {
+    animation: rotate 20s linear infinite;
+    transform-origin: 13px 25px;
+  }
+  .in-top {
+    animation: rotate 10s linear infinite;
+    transform-origin: 13px 25px;
+  }
+  .out-bottom {
+    animation: rotate 25s linear infinite;
+    transform-origin: 84px 93px;
+  }
+  .in-bottom {
+    animation: rotate 15s linear infinite;
+    transform-origin: 84px 93px;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1em;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a img.icon {
+    display: inline-block;
+    height: 1em;
+    margin: 0 0 -0.1em 0.3em;
+  }
+  
