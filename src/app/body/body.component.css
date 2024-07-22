@@ -249,7 +249,7 @@
   }
 }
 
-/* .outer {
+.outers {
   width: 300px;
   height: 250px;
   border-radius: 10px;
@@ -291,7 +291,7 @@
   }
 }
  
-.card {
+.cards{
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -321,7 +321,7 @@
   transform: rotate(40deg);
 }
  
-.card .text {
+.cards .text {
   font-weight: bolder;
   font-size: 4rem;
   background: linear-gradient(45deg, #000000 4%, #fff, #000);
@@ -352,4 +352,4 @@
   right: 10%;
   width: 1px;
   height: 100%;
-} */
+}
