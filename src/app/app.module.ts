@@ -9,6 +9,7 @@ import { MainComponent } from './main/main.component';
 import { BodyComponent } from './body/body.component';
 import { HomeComponent } from './home/home.component';
 import { ContentBodyComponent } from './content-body/content-body.component';
+import { FrontendTopicsComponent } from './frontend-topics/frontend-topics.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContentBodyComponent } from './content-body/content-body.component';
     MainComponent,
     BodyComponent,
     HomeComponent,
-    ContentBodyComponent
+    ContentBodyComponent,
+    FrontendTopicsComponent
   ],
   imports: [
     BrowserModule,
