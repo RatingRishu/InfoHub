@@ -106,3 +106,9 @@ ul {
         display: none;
     }
   }
+  
+  @media (max-width: 767px) {
+    .col-auto{
+        display: none;
+    }
+  }
