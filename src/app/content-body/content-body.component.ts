@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class ContentBodyComponent {
 
+  isPopupVisible = false;
+  popupHeader = '';
+
+  showPopup(headerName: string) {
+    this.popupHeader = headerName;
+    this.isPopupVisible = true;
+  }
+
+  hidePopup() {
+    this.isPopupVisible = false;
+  }
 }
