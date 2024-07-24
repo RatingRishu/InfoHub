@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-angular',
-  templateUrl: './angular.component.html',
-  styleUrls: ['./angular.component.css']
+  selector: 'app-javascript',
+  templateUrl: './javascript.component.html',
+  styleUrls: ['./javascript.component.css']
 })
-export class AngularComponent {
+export class JavascriptComponent {
 
   isPopupVisible = false;
   popupHeader = '';

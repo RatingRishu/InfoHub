@@ -12,6 +12,10 @@ import { ContentBodyComponent } from './content-body/content-body.component';
 import { FrontendTopicsComponent } from './frontend-topics/frontend-topics.component';
 import { HtmlComponent } from './FrontendTopics/html/html.component';
 import { AngularComponent } from './FrontendTopics/angular/angular.component';
+import { ReactComponent } from './FrontendTopics/react/react.component';
+import { JavascriptComponent } from './FrontendTopics/javascript/javascript.component';
+import { CssComponent } from './FrontendTopics/css/css.component';
+import { BootstrapComponent } from './FrontendTopics/bootstrap/bootstrap.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { AngularComponent } from './FrontendTopics/angular/angular.component';
     ContentBodyComponent,
     FrontendTopicsComponent,
     HtmlComponent,
-    AngularComponent
+    AngularComponent,
+    ReactComponent,
+    JavascriptComponent,
+    CssComponent,
+    BootstrapComponent
   ],
   imports: [
     BrowserModule,
