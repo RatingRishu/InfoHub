@@ -2,7 +2,7 @@
     position: relative;
 }
 .dropdown{
-    margin-left: -20%;
+    margin-left: -18%;
 }
 ul {
     list-style: none;
@@ -103,6 +103,12 @@ ul {
 
   @media (max-width: 769px) {
     .dropdown{
+        display: none;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .col-auto{
         display: none;
     }
   }

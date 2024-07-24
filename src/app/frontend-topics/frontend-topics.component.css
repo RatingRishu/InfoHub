@@ -1,0 +1,20 @@
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .topics {
+    background-color: #1f2937; /* Match the dark background color */
+    font-size: 16px;
+    border: 1px solid transparent; /* Remove the blue border */
+    color: #f3f4f6; /* Match the text color */
+    width: 30%; /* Adjust width as needed */
+    margin: 10px 0; /* Add some margin for spacing */
+    padding: 10px; /* Add padding for better appearance */
+    text-align: center; /* Center align text */
+    border-radius: 5px; /* Border radius */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex;
+    justify-content: space-between;
+  }
