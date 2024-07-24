@@ -1,22 +1,37 @@
 .resources {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column; /* Column direction for vertical alignment */
+    align-items: center; /* Center align the children */
   }
-  
+ 
   .topics {
     background-color: #1f2937;
     font-size: 16px;
-    border: 1px solid transparent; 
-    color: #f3f4f6; 
-    width: 45%; 
+    border: 1px solid transparent;
+    color: #f3f4f6;
+    width: 200px; /* Fixed width for consistency */
     margin: 10px 0;
-    padding: 10px; 
-    text-align: center; 
-    border-radius: 5px; 
-    cursor: pointer; 
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative; /* Relative position for the arrow */
+  }
+ 
+  .topics::after {
+    content: '';
+    position: absolute;
+    right: -20px; /* Positioning the arrow to the right */
+    top: 50%;
+    transform: translateY(-50%);
+    border: 10px solid transparent;
+    border-left: 10px solid #1f2937; /* Color of the arrow */
+  }
+ 
+  .sub-topics {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center; /* Center align the sub-topics */
   }
-  
+ 
+ 
