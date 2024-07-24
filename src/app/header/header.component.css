@@ -3,17 +3,20 @@
     height: 100px;
     border-radius: 100%;
 } */
-.navbar-brand h3{
+.navbar-brand h4{
     margin-left: 15%;
     color: #AA336A;
 }
+.navbar-brand h4 img{
+   mix-blend-mode: lighten;
+}
 @media (max-width: 768px) {
-    .navbar-brand h3,h5{
+    .navbar-brand h4,h5{
         text-align: center;
     }
 }
 @media (max-width: 321px) {
-    .navbar-brand h3{
+    .navbar-brand h4{
         margin-left: 35%;
         /* text-align: center; */
     }

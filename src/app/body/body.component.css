@@ -1,10 +1,10 @@
-.links {
+/* .links {
   position: fixed;
   bottom: 20px;
   right: 20px;
   font-size: 18px;
   font-family: sans-serif;
-}
+} */
 
 
 .parent {
@@ -47,6 +47,10 @@
   color: #00894d;
   font-weight: 900;
   font-size: 20px;
+}
+.content h4{
+  margin-top: -55px;
+
 }
 
 .content .text {
