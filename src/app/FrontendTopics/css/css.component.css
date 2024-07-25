@@ -89,9 +89,9 @@
   
   .popup {
     position: fixed;
-    right: -300px;
+    right: -500px;
     top: 0;
-    width: 300px;
+    width: 500px;
     height: 100%;
     background-color: white;
     box-shadow: -2px 0 5px rgba(0,0,0,0.5);
@@ -115,4 +115,17 @@
     font-size: 30px;
     cursor: pointer;
   }
-  
+  @media (max-width: 768px) {
+    .popup {
+      position: fixed;
+      right: -320px;
+      top: 0;
+      width: 320px;
+      height: 100%;
+      background-color: white;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+      overflow-x: hidden;
+      transition: 0.2s;
+      z-index: 1;
+    }
+}
