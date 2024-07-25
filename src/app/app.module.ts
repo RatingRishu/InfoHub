@@ -16,6 +16,9 @@ import { ReactComponent } from './FrontendTopics/react/react.component';
 import { JavascriptComponent } from './FrontendTopics/javascript/javascript.component';
 import { CssComponent } from './FrontendTopics/css/css.component';
 import { BootstrapComponent } from './FrontendTopics/bootstrap/bootstrap.component';
+import { BackendTopicsComponent } from './backend-topics/backend-topics.component';
+import { WebapiComponent } from './BackendTopics/webapi/webapi.component';
+import { DatabaseComponent } from './BackendTopics/database/database.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { BootstrapComponent } from './FrontendTopics/bootstrap/bootstrap.compone
     ReactComponent,
     JavascriptComponent,
     CssComponent,
-    BootstrapComponent
+    BootstrapComponent,
+    BackendTopicsComponent,
+    WebapiComponent,
+    DatabaseComponent
   ],
   imports: [
     BrowserModule,

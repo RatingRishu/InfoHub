@@ -1,0 +1,67 @@
+<div class="card-container">
+    <div class="card" #card1 (click)="showPopup(card1)">
+      <p class="card-title">What is Web Api's</p>
+      <p class="small-desc">
+        Web Api's is a web framework that empowers developers to build fast,
+        reliable .
+      </p>
+      <div class="go-corner">
+        <div class="go-arrow">→</div>
+      </div>
+    </div>
+  
+    <div class="card" #card2 (click)="showPopup(card2)">
+      <p class="card-title">Features</p>
+      <p class="small-desc">
+        Web Api's is a web framework that empowers developers to ,
+        reliable applications.
+      </p>
+      <div class="go-corner">
+        <div class="go-arrow">→</div>
+      </div>
+    </div>
+  
+    <div class="card" #card3 (click)="showPopup(card3)">
+      <p class="card-title">SPA</p>
+      <p class="small-desc">
+        Web Api's is a web framework that empowers  to build fast,
+        reliable applications.
+      </p>
+      <div class="go-corner">
+        <div class="go-arrow">→</div>
+      </div>
+    </div>
+  
+    <div class="card" #card4 (click)="showPopup(card4)">
+      <p class="card-title">Component</p>
+      <p class="small-desc">
+        Web Api's is a web framework that  developers to build fast,
+        reliable applications.
+      </p>
+      <div class="go-corner">
+        <div class="go-arrow">→</div>
+      </div>
+    </div>
+  
+    <div class="card" #card5 (click)="showPopup(card5)">
+      <p class="card-title">Services</p>
+      <p class="small-desc">
+        Web Api's is a  that empowers developers to build fast,
+        reliable applications.
+      </p>
+      <div class="go-corner">
+        <div class="go-arrow">→</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="popup" [class.show]="isPopupVisible">
+    <div class="popup-content">
+      <span class="close" (click)="hidePopup()">&times;</span>
+      <h3>{{ popupHeader }}</h3>
+      <p>{{ popupDescription }}</p>
+      
+    </div>
+  </div>
+  
+    

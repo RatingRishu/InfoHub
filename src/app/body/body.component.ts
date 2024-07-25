@@ -29,4 +29,8 @@ export class BodyComponent {
     console.log("test");
     this.router.navigateByUrl('/frontendTopics');
   }
+  onclickbackend() {
+    console.log("test");
+    this.router.navigateByUrl('/backendtopics');
+  }
 }

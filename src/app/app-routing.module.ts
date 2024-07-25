@@ -11,6 +11,9 @@ import { CssComponent } from './FrontendTopics/css/css.component';
 import { BootstrapComponent } from './FrontendTopics/bootstrap/bootstrap.component';
 import { JavascriptComponent } from './FrontendTopics/javascript/javascript.component';
 import { ReactComponent } from './FrontendTopics/react/react.component';
+import { BackendTopicsComponent } from './backend-topics/backend-topics.component';
+import { WebapiComponent } from './BackendTopics/webapi/webapi.component';
+import { DatabaseComponent } from './BackendTopics/database/database.component';
 
 const routes: Routes = [
   {path: '', component: BodyComponent},
@@ -22,7 +25,9 @@ const routes: Routes = [
   {path: 'frontendTopics/bootstrap', component: BootstrapComponent},
   {path: 'frontendTopics/javascript', component: JavascriptComponent},
   {path: 'frontendTopics/react', component: ReactComponent},
-
+  {path: 'backendtopics', component: BackendTopicsComponent},
+  {path: 'backendtopics/webapi', component: WebapiComponent},
+  {path: 'backendtopics/database', component: DatabaseComponent}
 
 ];
 
