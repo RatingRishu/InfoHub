@@ -1,66 +1,17 @@
-
 <div class="card-container">
-    <div class="card" (click)="showPopup('What is Angular')">
-      <p class="card-title">What is Angular</p>
-      <p class="small-desc">
-        Angular is a web framework that empowers developers to build fast,
-        reliable applications.
-      </p>
-      <div class="go-corner">
-        <div class="go-arrow">→</div>
-      </div>
-    </div>
-  
-    <div class="card" (click)="showPopup('Features')">
-      <p class="card-title">Features</p>
-      <p class="small-desc">
-        Angular is a web framework that empowers developers to build fast,
-        reliable applications.
-      </p>
-      <div class="go-corner">
-        <div class="go-arrow">→</div>
-      </div>
-    </div>
-  
-    <div class="card" (click)="showPopup('SPA')">
-      <p class="card-title">SPA</p>
-      <p class="small-desc">
-        Angular is a web framework that empowers developers to build fast,
-        reliable applications.
-      </p>
-      <div class="go-corner">
-        <div class="go-arrow">→</div>
-      </div>
-    </div>
-  
-    <div class="card" (click)="showPopup('Component')">
-      <p class="card-title">Component</p>
-      <p class="small-desc">
-        Angular is a web framework that empowers developers to build fast,
-        reliable applications.
-      </p>
-      <div class="go-corner">
-        <div class="go-arrow">→</div>
-      </div>
-    </div>
-  
-    <div class="card" (click)="showPopup('Services')">
-      <p class="card-title">Services</p>
-      <p class="small-desc">
-        Angular is a web framework that empowers developers to build fast,
-        reliable applications.
-      </p>
-      <div class="go-corner">
-        <div class="go-arrow">→</div>
-      </div>
-    </div>
-  
-  </div>
-  
-  <div class="popup" [class.show]="isPopupVisible">
-    <div class="popup-content">
-      <span class="close" (click)="hidePopup()">&times;</span>
-      <h3>{{ popupHeader }}</h3>
+  <div class="card" *ngFor="let card of cards" (click)="showPopup(card.title)">
+    <p class="card-title">{{ card.title }}</p>
+    <p class="small-desc">{{ card.description }}</p>
+    <div class="go-corner">
+      <div class="go-arrow">→</div>
     </div>
   </div>
-  
+</div>
+
+<div class="popup" [class.show]="isPopupVisible">
+  <div class="popup-content">
+    <span class="close" (click)="hidePopup()">&times;</span>
+    <h3>{{ popupHeader }}</h3>
+    <div [innerHTML]="popupContent"></div>
+  </div>
+</div>
