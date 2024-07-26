@@ -5,7 +5,7 @@
 } */
 .navbar-brand h4{
     margin-left: 15%;
-    color: #AA336A;
+    color: hsl(332, 56%, 67%);
 }
 .navbar-brand h4 img{
    mix-blend-mode: lighten;

@@ -1,4 +1,4 @@
-<div class="card-container">
+<!-- <div class="card-container">
   <div class="card" #card1 (click)="showPopup(card1)">
     <p class="card-title">What is HTML</p>
     <p class="small-desc">
@@ -64,4 +64,23 @@
   </div>
 </div>
 
+   -->
+
+   <div class="card-container">
+    <div class="card" *ngFor="let card of cards" (click)="showPopup(card.title)">
+      <p class="card-title">{{ card.title }}</p>
+      <p class="small-desc">{{ card.description }}</p>
+      <div class="go-corner">
+        <div class="go-arrow">→</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="popup" [class.show]="isPopupVisible">
+    <div class="popup-content">
+      <span class="close" (click)="hidePopup()">&times;</span>
+      <h3>{{ popupHeader }}</h3>
+      <div [innerHTML]="popupContent"></div>
+    </div>
+  </div>
   
