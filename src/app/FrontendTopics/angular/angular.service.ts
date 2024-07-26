@@ -35,6 +35,20 @@ export class AngularService {
       `,
     },
     {
+      title: 'ng-onchange',
+      description:
+        'A web framework that empowers developers to build fast, reliable applications.',
+      popupContent: `
+        <p>Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Developed and maintained by Google, Angular provides a way to build applications for the web, mobile, and desktop.</p>
+        <ul>
+          <li>Angular combines declarative templates, dependency injection, end-to-end tooling, and integrated best practices to solve development challenges.</li>
+          <li>It empowers developers to create applications that can run on multiple platforms, including web, mobile, and desktop, with a unified codebase.</li>
+          <li><a routerLink="parent" >ng-change</a></li>
+        </ul>
+        <a href="parent" >To see function click</a>
+      `,
+    },
+    {
       title: 'Features',
       description: 'Explore the powerful features of Angular.',
       popupContent: `

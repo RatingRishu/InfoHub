@@ -20,6 +20,8 @@ import { BackendTopicsComponent } from './backend-topics/backend-topics.componen
 import { WebapiComponent } from './BackendTopics/webapi/webapi.component';
 import { DatabaseComponent } from './BackendTopics/database/database.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { ParentOnchangeComponent } from './life-cycle-hooks/parent-onchange/parent-onchange.component';
+import { ChildOnchangeComponent } from './life-cycle-hooks/child-onchange/child-onchange.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { ContactusComponent } from './contactus/contactus.component';
     BackendTopicsComponent,
     WebapiComponent,
     DatabaseComponent,
-    ContactusComponent
+    ContactusComponent,
+    ParentOnchangeComponent,
+    ChildOnchangeComponent
   ],
   imports: [
     BrowserModule,

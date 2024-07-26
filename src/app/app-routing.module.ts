@@ -15,6 +15,8 @@ import { BackendTopicsComponent } from './backend-topics/backend-topics.componen
 import { WebapiComponent } from './BackendTopics/webapi/webapi.component';
 import { DatabaseComponent } from './BackendTopics/database/database.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { ParentOnchangeComponent } from './life-cycle-hooks/parent-onchange/parent-onchange.component';
+import { ChildOnchangeComponent } from './life-cycle-hooks/child-onchange/child-onchange.component';
 
 const routes: Routes = [
   {path: '', component: BodyComponent},
@@ -30,6 +32,9 @@ const routes: Routes = [
   {path: 'backendtopics/webapi', component: WebapiComponent},
   {path: 'backendtopics/database', component: DatabaseComponent},
   {path: 'contactus', component: ContactusComponent},
+  {path: 'parent', component: ParentOnchangeComponent},
+  {path: 'child', component: ChildOnchangeComponent},
+  
 
 
 ];
