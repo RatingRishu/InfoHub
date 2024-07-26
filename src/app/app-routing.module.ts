@@ -5,11 +5,13 @@ import { ContentBodyComponent } from './content-body/content-body.component';
 import { HomeComponent } from './home/home.component';
 import { BodyComponent } from './body/body.component';
 import { FrontendTopicsComponent } from './frontend-topics/frontend-topics.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 const routes: Routes = [
   {path: '', component: BodyComponent},
   {path: 'content', component: ContentBodyComponent},
   {path: 'frontendTopics', component: FrontendTopicsComponent},
+  {path: 'contactus', component: ContactusComponent},
 
 ];
 
