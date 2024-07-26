@@ -14,6 +14,7 @@ import { ReactComponent } from './FrontendTopics/react/react.component';
 import { BackendTopicsComponent } from './backend-topics/backend-topics.component';
 import { WebapiComponent } from './BackendTopics/webapi/webapi.component';
 import { DatabaseComponent } from './BackendTopics/database/database.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 const routes: Routes = [
   {path: '', component: BodyComponent},
@@ -27,7 +28,9 @@ const routes: Routes = [
   {path: 'frontendTopics/react', component: ReactComponent},
   {path: 'backendtopics', component: BackendTopicsComponent},
   {path: 'backendtopics/webapi', component: WebapiComponent},
-  {path: 'backendtopics/database', component: DatabaseComponent}
+  {path: 'backendtopics/database', component: DatabaseComponent},
+  {path: 'contactus', component: ContactusComponent},
+
 
 ];
 

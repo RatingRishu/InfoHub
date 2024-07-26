@@ -19,6 +19,7 @@ import { BootstrapComponent } from './FrontendTopics/bootstrap/bootstrap.compone
 import { BackendTopicsComponent } from './backend-topics/backend-topics.component';
 import { WebapiComponent } from './BackendTopics/webapi/webapi.component';
 import { DatabaseComponent } from './BackendTopics/database/database.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { DatabaseComponent } from './BackendTopics/database/database.component';
     BootstrapComponent,
     BackendTopicsComponent,
     WebapiComponent,
-    DatabaseComponent
+    DatabaseComponent,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,
