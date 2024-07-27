@@ -22,6 +22,7 @@ import { DatabaseComponent } from './BackendTopics/database/database.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ParentOnchangeComponent } from './life-cycle-hooks/parent-onchange/parent-onchange.component';
 import { ChildOnchangeComponent } from './life-cycle-hooks/child-onchange/child-onchange.component';
+import { ContactPopupComponent } from './Popup-Components/contact-popup/contact-popup.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ChildOnchangeComponent } from './life-cycle-hooks/child-onchange/child-
     DatabaseComponent,
     ContactusComponent,
     ParentOnchangeComponent,
-    ChildOnchangeComponent
+    ChildOnchangeComponent,
+    ContactPopupComponent
   ],
   imports: [
     BrowserModule,
