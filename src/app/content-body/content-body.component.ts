@@ -1,5 +1,5 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { gsap } from 'gsap';
+// import { gsap } from 'gsap';
 
 @Component({
   selector: 'app-content-body',
