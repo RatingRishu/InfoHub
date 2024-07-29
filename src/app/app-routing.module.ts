@@ -17,6 +17,13 @@ import { DatabaseComponent } from './BackendTopics/database/database.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ParentOnchangeComponent } from './life-cycle-hooks/parent-onchange/parent-onchange.component';
 import { ChildOnchangeComponent } from './life-cycle-hooks/child-onchange/child-onchange.component';
+import { LibrariesTopicComponent } from './libraries-topic/libraries-topic.component';
+import { AOSComponent } from './Libraries-Topics/aos/aos.component';
+import { PrimeNgComponent } from './Libraries-Topics/prime-ng/prime-ng.component';
+import { MatterJsComponent } from './Libraries-Topics/matter-js/matter-js.component';
+import { G2PlotComponent } from './Libraries-Topics/g2-plot/g2-plot.component';
+import { ThreeJsComponent } from './Libraries-Topics/three-js/three-js.component';
+import { GASPComponent } from './Libraries-Topics/gasp/gasp.component';
 
 const routes: Routes = [
   {path: '', component: BodyComponent},
@@ -34,8 +41,13 @@ const routes: Routes = [
   {path: 'contactus', component: ContactusComponent},
   {path: 'parent', component: ParentOnchangeComponent},
   {path: 'child', component: ChildOnchangeComponent},
-  
-
+  {path: 'librariestopics', component: LibrariesTopicComponent},
+  {path: 'librariestopics/aos', component: AOSComponent},
+  {path: 'librariestopics/primeng', component: PrimeNgComponent},
+  {path: 'librariestopics/matterjs', component: MatterJsComponent},
+  {path: 'librariestopics/g2plot', component: G2PlotComponent},
+  {path: 'librariestopics/threejs', component: ThreeJsComponent},
+  {path: 'librariestopics/gasp', component: GASPComponent},
 
 ];
 

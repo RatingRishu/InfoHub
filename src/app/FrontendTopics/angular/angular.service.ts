@@ -44,7 +44,7 @@ export class AngularService {
           <li>Angular combines declarative templates, dependency injection, end-to-end tooling, and integrated best practices to solve development challenges.</li>
           <li>It empowers developers to create applications that can run on multiple platforms, including web, mobile, and desktop, with a unified codebase.</li>
         </ul>
-        <a href="parent" >To see function click</a>
+        <a href="content" target="_blank">To see function click</a>
       `,
     },
     {

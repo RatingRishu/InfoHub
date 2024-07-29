@@ -23,6 +23,13 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { ParentOnchangeComponent } from './life-cycle-hooks/parent-onchange/parent-onchange.component';
 import { ChildOnchangeComponent } from './life-cycle-hooks/child-onchange/child-onchange.component';
 import { ContactPopupComponent } from './Popup-Components/contact-popup/contact-popup.component';
+import { LibrariesTopicComponent } from './libraries-topic/libraries-topic.component';
+import { AOSComponent } from './Libraries-Topics/aos/aos.component';
+import { PrimeNgComponent } from './Libraries-Topics/prime-ng/prime-ng.component';
+import { MatterJsComponent } from './Libraries-Topics/matter-js/matter-js.component';
+import { G2PlotComponent } from './Libraries-Topics/g2-plot/g2-plot.component';
+import { ThreeJsComponent } from './Libraries-Topics/three-js/three-js.component';
+import { GASPComponent } from './Libraries-Topics/gasp/gasp.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +53,14 @@ import { ContactPopupComponent } from './Popup-Components/contact-popup/contact-
     ContactusComponent,
     ParentOnchangeComponent,
     ChildOnchangeComponent,
-    ContactPopupComponent
+    ContactPopupComponent,
+    LibrariesTopicComponent,
+    AOSComponent,
+    PrimeNgComponent,
+    MatterJsComponent,
+    G2PlotComponent,
+    ThreeJsComponent,
+    GASPComponent,
   ],
   imports: [
     BrowserModule,

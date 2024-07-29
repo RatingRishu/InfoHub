@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
+import { gsap } from 'gsap';
 
 @Component({
   selector: 'app-content-body',
@@ -17,5 +18,14 @@ export class ContentBodyComponent {
 
   // hidePopup() {
   //   this.isPopupVisible = false;
+  // }
+
+  // implements AfterViewInit
+
+  
+  // ngAfterViewInit(): void {
+  //   gsap.to(".green", { rotation: 360, x: 100, duration: 3 });
+  //   gsap.from(".purple", { rotation: -360, x: -100, duration: 3 });
+  //   gsap.fromTo(".blue", { x: -100 }, { rotation: 360, x: 100, duration: 3 });
   // }
 }

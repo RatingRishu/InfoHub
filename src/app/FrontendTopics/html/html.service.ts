@@ -17,7 +17,7 @@ export class HtmlService {
       <p> HTML is text-based computer coding, so you only need basic computer knowledge and the ability to work with files. You should also understand letters and basic symbols.</p>
        <h4> Document type declaration </h4>
        <hr>
-       <p> All HTML documents must start with a document type declaration, <!DOCTYPE html>, at the top of the page. This declaration helps browsers display web pages correctly.</p>
+       <p> All HTML documents must start with a document type declaration, &lt;!DOCTYPE html&gt;, at the top of the page. This declaration helps browsers display web pages correctly.</p>
        <h4> HTML document </h4>
        <hr>
        <p> The HTML document itself begins with <html> and ends with </html>. The visible part of the HTML document is between <body> and </body>..</p>
@@ -51,11 +51,11 @@ export class HtmlService {
       title: 'HTML Documents',
       description: 'Understand the core concept of components in Angular.',
       popupContent: `
-        <p>All HTML documents must start with a document type declaration < ! DOCTYPE html >. The HTML document itself begins with < html> and ends with </ html>. 
+        <p>All HTML documents must start with a document type declaration 	&lt;!DOCTYPE html&gt;. The HTML document itself begins with < html> and ends with </ html>. 
         The visible part of the HTML document is between < body> and </ body>.</p>
         <h1> html code format</h1>
         <br>
-      <img src="https://gist.github.com/user-attachments/assets/409a1a2e-953d-45d2-9156-a23fc972c96f">
+        <img src="https://gist.github.com/user-attachments/assets/2a7d1dd8-eb12-4ce4-9b40-eba4683d03d0" width="330" height="400"> 
 
        <ul>
           <li><a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">HTML Basics</a></li>
