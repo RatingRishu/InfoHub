@@ -33,4 +33,8 @@ export class BodyComponent {
     console.log("test");
     this.router.navigateByUrl('/backendtopics');
   }
+  onclicklibraries() {
+    console.log("test");
+    this.router.navigateByUrl('/librariestopics');
+  }
 }
