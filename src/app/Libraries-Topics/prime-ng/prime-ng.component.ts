@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PrimeNgService } from './prime-ng.service';
 
 @Component({
   selector: 'app-prime-ng',
@@ -8,10 +9,22 @@ import { Component } from '@angular/core';
 export class PrimeNgComponent {
   isPopupVisible = false;
   popupHeader = '';
+  popupContent = '';
+  cards: any;
+  
+  constructor(private primengservice: PrimeNgService) {}
+  
+  ngOnInit(): void {
+    this.cards = this.primengservice.getCards();
+  }
 
-  showPopup(headerName: string) {
-    this.popupHeader = headerName;
-    this.isPopupVisible = true;
+  showPopup(cardTitle: string) {
+    const card = this.primengservice.getCardByTitle(cardTitle);
+    if (card) {
+      this.popupHeader = card.title;
+      this.popupContent = card.popupContent;
+      this.isPopupVisible = true;
+    }
   }
 
   hidePopup() {
