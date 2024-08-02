@@ -27,11 +27,11 @@ export class BodyComponent {
 
   onclickFrontEnd() {
     console.log("test");
-    this.router.navigateByUrl('/frontendTopics');
+    this.router.navigateByUrl('frontend');
   }
   onclickbackend() {
     console.log("test");
-    this.router.navigateByUrl('/backendtopics');
+    this.router.navigateByUrl('backend');
   }
   onclicklibraries() {
     console.log("test");
