@@ -1,44 +1,28 @@
-<!-- <div class="modal">
-    <div class="modal-content">
-        <span class="close" (click)="close()">&times;</span>
-        <form class="colorful-form">
-            <div class="form-group">
-                <label class="form-label" for="name">Name:</label>
-                <input required placeholder="Enter your name" class="form-input" type="text" id="name">
-            </div>
-            <div class="form-group">
-                <label class="form-label" for="email">Email:</label>
-                <input required placeholder="Enter your email" class="form-input" type="email" id="email">
-            </div>
-            <div class="form-group">
-                <label class="form-label" for="message">Message:</label>
-                <textarea required placeholder="Enter your message" class="form-input" id="message"></textarea>
-            </div>
-            <button class="form-button" type="submit">Submit</button>
-        </form>
-    </div>
-</div> -->
-
-
-
 <div class="modal" (click)="onBackgroundClick($event)">
     <div class="modal-content" (click)="$event.stopPropagation()">
-      <span class="close" (click)="close()">&times;</span>
-      <form class="colorful-form">
-        <div class="form-group">
-          <label class="form-label" for="name">Name:</label>
-          <input required placeholder="Enter your name" class="form-input" type="text" id="name">
+        <span class="close" (click)="close()">&times;</span>
+        <div class="form-card1">
+            <div class="form-card2">
+                <form class="form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="e06f7a49-754f-47f1-a7ef-ba73b44ee6b1">
+
+                    <p class="form-heading">Get In Touch</p>
+
+                    <div class="form-field">
+                        <input required="" placeholder="Name" class="input-field" type="text" name="name" />
+                    </div>
+
+                    <div class="form-field">
+                        <input required="" placeholder="Email" class="input-field" type="email" name="email" />
+                    </div>
+                    <div class="form-field">
+                        <input required="" placeholder="Message" cols="30" rows="3" class="input-field" name="message">
+                    </div>
+
+                    <button class="sendMessage-btn">Send Message</button>
+                </form>
+            </div>
         </div>
-        <div class="form-group">
-          <label class="form-label" for="email">Email:</label>
-          <input required placeholder="Enter your email" class="form-input" type="email" id="email">
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="message">Message:</label>
-          <textarea required placeholder="Enter your message" class="form-input" id="message"></textarea>
-        </div>
-        <button class="form-button" type="submit">Submit</button>
-      </form>
+
     </div>
-  </div>
-  
+</div>
