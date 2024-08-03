@@ -27,8 +27,8 @@
 .close {
     color: #aaa;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 4px;
+    top: 0px;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
