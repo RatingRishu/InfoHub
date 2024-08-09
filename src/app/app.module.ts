@@ -30,6 +30,7 @@ import { MatterJsComponent } from './Libraries-Topics/matter-js/matter-js.compon
 import { G2PlotComponent } from './Libraries-Topics/g2-plot/g2-plot.component';
 import { ThreeJsComponent } from './Libraries-Topics/three-js/three-js.component';
 import { GASPComponent } from './Libraries-Topics/gasp/gasp.component';
+import { PlacementPrepComponent } from './placement-prep/placement-prep.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { GASPComponent } from './Libraries-Topics/gasp/gasp.component';
     G2PlotComponent,
     ThreeJsComponent,
     GASPComponent,
+    PlacementPrepComponent,
   ],
   imports: [
     BrowserModule,

@@ -37,4 +37,8 @@ export class BodyComponent {
     console.log("test");
     this.router.navigateByUrl('/librariestopics');
   }
+  onclickplacementprep() {
+    console.log("test");
+    this.router.navigateByUrl('/placementprep');
+  }
 }

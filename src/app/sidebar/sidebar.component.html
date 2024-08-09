@@ -1,204 +1,3 @@
-<!-- <div class="side">
-    <div class="container-fluid">
-        <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                    <a href="/"
-                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <span class="fs-5 d-none d-sm-inline">Menu</span>
-                    </a>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                      </form>
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-                        id="menu">
-                        <li class="nav-item">
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <a routerLink="/frontend">
-                                <i class="fs-4 bi-house" routerLink="/frontend"> <span
-                                        class="ms-1 d-none d-sm-inline">Frontend </span>
-                                    </a></i>
-                                <i class="bi bi-chevron-double-down"></i>
-                            </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-    
-                                <li>
-                                    <a href="#" class="nav-link px-0" routerLink="frontend/html"> <span
-                                            class="d-none d-sm-inline">HTML</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0" routerLink="frontend/css"> <span
-                                            class="d-none d-sm-inline">CSS</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0" routerLink="frontend/javascript"> <span
-                                            class="d-none d-sm-inline">JavaScript</span>
-                                    </a>
-                                </li>
-                                <li class="w-100">
-                                    <a class="nav-link px-0"
-                                        routerLink="frontend/bootstrap"> <span
-                                            class="d-none d-sm-inline">Bootstrap</span>
-                                    </a>
-                                </li>
-                                <li class="w-100">
-                                    <a routerLink="frontend/angular" class="nav-link px-0"> <span
-                                            class="d-none d-sm-inline">Angular</span>
-                                    </a>
-                                </li>
-                                <li class="w-100">
-                                    <a class="nav-link px-0" routerLink="frontend/react"> <span
-                                            class="d-none d-sm-inline">React</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-speedometer2" routerLink="backend"> <span
-                                        class="ms-1 d-none d-sm-inline">Backend</span></i>
-                            </a>
-                            <ul class="collapse show nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a routerLink="/backend/webapi" class="nav-link px-0"> <span class="d-none d-sm-inline">Programming languages</span>
-                                       </a>
-                                </li>
-                                <li>
-                                    <a routerLink="/backend/database" class="nav-link px-0"> <span class="d-none d-sm-inline">Web Frameworks</span>
-                                        </a>
-                                </li>
-                                <li class="w-100">
-                                    <a routerLink="/backend/webapi" class="nav-link px-0"> <span class="d-none d-sm-inline">RESTful APIs and Web Services</span>
-                                       </a>
-                                </li>
-                                <li>
-                                    <a routerLink="/backend/database" class="nav-link px-0"> <span class="d-none d-sm-inline">Databases</span>
-                                        </a>
-                                </li>
-                                <li class="w-100">
-                                    <a routerLink="/backend/webapi" class="nav-link px-0"> <span class="d-none d-sm-inline">Authentication and Authorization</span>
-                                       </a>
-                                </li>
-                                <li>
-                                    <a routerLink="/backend/database" class="nav-link px-0"> <span class="d-none d-sm-inline">Server Management and Deployment</span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a routerLink="/backend/database" class="nav-link px-0"> <span class="d-none d-sm-inline">Caching Strategies</span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a routerLink="/backend/database" class="nav-link px-0"> <span class="d-none d-sm-inline">Testing and Debugging</span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a routerLink="/backend/database" class="nav-link px-0"> <span class="d-none d-sm-inline">Security Best Practices</span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a routerLink="/backend/database" class="nav-link px-0"> <span class="d-none d-sm-inline">Performance Optimization</span>
-                                        </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-table" routerLink="librariestopics"> <span
-                                        class="ms-1 d-none d-sm-inline">Libraries</span></i></a>
-
-                            <ul class="collapse show nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a routerLink="librariestopics/aos" class="nav-link px-0"> <span class="d-none d-sm-inline">AOS</span>
-                                       </a>
-                                </li>
-                                <li>
-                                    <a routerLink="librariestopics/primeng" class="nav-link px-0"> <span class="d-none d-sm-inline">Prime NG</span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a routerLink="librariestopics/matterjs" class="nav-link px-0"> <span class="d-none d-sm-inline">Matter Js</span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a routerLink="librariestopics/g2plot" class="nav-link px-0"> <span class="d-none d-sm-inline">G2-Plot</span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a routerLink="librariestopics/threejs" class="nav-link px-0"> <span class="d-none d-sm-inline">Three Js</span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a routerLink="librariestopics/gasp" class="nav-link px-0"> <span class="d-none d-sm-inline">GASP</span>
-                                        </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-bootstrap" routerLink="/resourcestopics"><span
-                                        class="ms-1 d-none d-sm-inline">Resources</span></i> </a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span>
-                                       </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span>
-                                        </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#submenu5" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-grid" routerLink="cloudtopics"> <span
-                                        class="ms-1 d-none d-sm-inline">Cloud Computing</span></i></a>
-                            <ul class="collapse nav flex-column ms-1" id="submenu5" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
-                                       </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
-                                        </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span>
-                                        </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-people" routerLink="child"> <span
-                                        class="ms-1 d-none d-sm-inline">Placement Prep</span></i></a>
-                        </li>
-                    </ul>
-
-                    <hr>
-                </div>
-            </div>
-            <div class="col py-3">
-                <app-body></app-body>
-                <router-outlet></router-outlet>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
- -->
-
-
-
  <div class="side">
     <div class="container-fluid">
         <div class="row flex-nowrap">
@@ -320,7 +119,7 @@
                         </li>
                         <li>
                             <a href="#submenu4" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Resources</span>
+                                <i class="fs-4 bi-bootstrap"> <span class="ms-1 d-none d-sm-inline">Resources</span></i>
                             </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu4" data-bs-parent="#menu">
                                 <li>
@@ -335,7 +134,7 @@
                         </li>
                         <li>
                             <a href="#submenu5" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Cloud Computing</span>
+                                <i class="fs-4 bi-grid"> <span class="ms-1 d-none d-sm-inline">Cloud Computing</span></i>
                             </a>
                             <ul class="collapse nav flex-column ms-1" id="submenu5" data-bs-parent="#menu">
                                 <li>
@@ -357,8 +156,8 @@
                             </ul>
                         </li>
                         <li>
-                            <a class="nav-link px-0 align-middle" routerLink="child">
-                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Placement Prep</span>
+                            <a class="nav-link px-0 align-middle" routerLink="placementprep">
+                                <i class="fs-4 bi-people" > <span class="ms-1 d-none d-sm-inline">Placement Prep</span></i>
                             </a>
                         </li>
                     </ul>
