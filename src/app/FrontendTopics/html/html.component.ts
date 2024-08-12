@@ -13,8 +13,8 @@ export class HtmlComponent {
   popupHeader = '';
   popupContent = '';
   cards: any;
-  constructor (private htmlservice: HtmlService) {}
-  ngOnInit() { 
+  constructor(private htmlservice: HtmlService) { }
+  ngOnInit() {
     this.cards = this.htmlservice.getCards();
 
   }
@@ -23,6 +23,11 @@ export class HtmlComponent {
     if (card) {
       this.popupHeader = card.title;
       this.popupContent = card.popupContent;
+
+      if (card.note) {
+        this.popupContent += `<p style="color: red; margin-top: 10px;">${card.note}</p>`;
+      }
+
       this.isPopupVisible = true;
     }
   }
@@ -30,23 +35,6 @@ export class HtmlComponent {
   hidePopup() {
     this.isPopupVisible = false;
   }
-  // showPopup(card: HTMLDivElement) {
-  //   const cardTitleElement = card.querySelector('.card-title');
-  //   const cardDescriptionElement = card.querySelector('.small-desc');
 
-  //   if (cardTitleElement instanceof HTMLElement) {
-  //     this.popupHeader = cardTitleElement.innerText;
-  //   }
-
-  //   if (cardDescriptionElement instanceof HTMLElement) {
-  //     this.popupDescription = cardDescriptionElement.innerText;
-  //   }
-    
-  //   this.isPopupVisible = true;
-  // }
-
-  // hidePopup() {
-  //   this.isPopupVisible = false;
-  // }
 
 }

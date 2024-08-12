@@ -26,7 +26,7 @@ export class HtmlService {
        <p>HTML elements have three parts: opening tag, closing tag, and content. The opening tag is the element's name wrapped in angle brackets, while the closing tag is the same as the opening tag but with a 
        forward slash before the element's name. Forgetting a closing tag can lead to conflicts or unexpected results. Content is what the tags display and can include text, images, or other featured material.</p>
       <ul>
-          <li><a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">HTML Basics</a></li>
+          <li><a target='_blank' href="https://www.w3schools.com/html/html_basic.asp" target="_blank">HTML Basics</a></li>
       </ul>
       `,
     },
@@ -43,7 +43,7 @@ export class HtmlService {
           <li><b>Supports a wide range of formats:</b> HTML supports a wide range of colors, formats, and layouts, which helps create attractive web pages. </li>
           <li><b>Search engine friendly:</b> HTML is search engine friendly. </li>
           <br>
-          <li><a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">HTML Intro</a></li>
+          <li><a target='_blank' href="https://www.w3schools.com/html/html_intro.asp" target="_blank">HTML Intro</a></li>
         </ul>
       `,
     },
@@ -58,7 +58,7 @@ export class HtmlService {
         <img src="https://gist.github.com/user-attachments/assets/2a7d1dd8-eb12-4ce4-9b40-eba4683d03d0" width="330" height="400"> 
 
        <ul>
-          <li><a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">HTML Basics</a></li>
+          <li><a target='_blank' href="https://www.w3schools.com/html/html_basic.asp" target="_blank">HTML Basics</a></li>
       </ul>
       `,
     },
@@ -81,60 +81,126 @@ export class HtmlService {
         <p>The HTML < p > element defines a paragraph. A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
 
               <img src="https://gist.github.com/user-attachments/assets/fa4d4f1e-3c7a-4c93-8a97-2206dd8ff74b">
-
+        
       `,
     },
     {
-      title: 'SPA',
-      description: 'Learn about Single Page Applications (SPA) in Angular.',
+      title: 'Line Break Tag',
+      description: 'BR tag < br > , Whenever you use the <br /> element, anything following it starts from the next line. ',
+      note: 'Note: If the image is not showing properly, click on the image.',
       popupContent: `
-        <p>A Single Page Application (SPA) is a web application that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from the server. Angular is designed for building SPAs, providing a seamless user experience by loading content dynamically and ensuring fast, responsive performance.</p>
-      `,
+        Whenever you use the < br /> element, anything following it starts from the next line. This
+        tag is an example of an empty element, where you do not need opening and closing tags, as
+        there is nothing to go in between them.
+        The <br /> tag has a space between the characters br and the forward slash. If you omit this
+        space, older browsers will have trouble rendering the line break, while if you miss the forward
+        slash character and just use <br> it is not valid in XHTML.    
+        
+         <a target='_blank' href="https://gist.github.com/user-attachments/assets/2f176331-6faa-414f-a24b-32ed0458c405">
+          <img src="https://gist.github.com/user-attachments/assets/2f176331-6faa-414f-a24b-32ed0458c405" />
+        </a>
+        `,
     },
     {
-      title: 'Component',
-      description: 'Understand the core concept of components in Angular.',
+      title: 'Horizontal Lines',
+      description: 'Horizontal lines are used to visually break-up sections of a document. The < hr > tag creates a line from the current position in the document to the right margin and breaks the line accordingly.',
+      note: 'Note: If the image is not showing properly, click on the image.',
       popupContent: `
-        <p>Components are the fundamental building blocks of an Angular application. Each component consists of an HTML template, CSS styles, and a TypeScript class that defines the component's behavior. Components can be nested, reused, and managed independently, promoting modular and maintainable code.</p>
-
-        <div class="code-editor">
-      <div class="header">
-        <span class="title">CSS</span>
-       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="icon"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M6 6L18 18"></path> <path stroke-linecap="round" stroke-width="2" stroke="#4C4F5A" d="M18 6L6 18"></path> </g></svg>
-      </div>
-      <div class="editor-content">
-        <code class="code">
-          <p><span class="color-0">.code-editor </span> <span>{</span></p>
-
-          <p class="property">
-            <span class="color-2">max-width</span><span>:</span>
-            <span class="color-1">300px</span>;
-          </p>
-          <p class="property">
-            <span class="color-2">background-color</span><span>:</span>
-            <span class="color-preview-1"></span><span class="">#1d1e22</span>;
-          </p>
-          <p class="property">
-            <span class="color-2"> box-shadow</span><span>:</span>
-            <span class="color-1">0px 4px 30px  <span class="color-preview-2"></span><span class="color-3">rgba(</span>0, 0, 0, 0.5<span class="color-3">)</span></span>;
-          </p>
-          <p class="property">
-            <span class="color-2">border-radius</span><span>:</span>
-            <span class="color-1">8px</span>;
-          </p>
-          <span>}</span>
-        </code>
-      </div>
-    </div>
+       Horizontal lines are used to visually break-up sections of a document. The < hr > tag creates
+        a line from the current position in the document to the right margin and breaks the line
+        accordingly.
+         <a target='_blank' href="https://gist.github.com/user-attachments/assets/07569284-7f0f-435a-8630-8f7c6ccee0a5">
+          <img src="https://gist.github.com/user-attachments/assets/07569284-7f0f-435a-8630-8f7c6ccee0a5" />
+        </a>
+        `,
+    },
+    {
+      title: 'HTML – ATTRIBUTES',
+      description: 'An attribute is used to define the characteristics of an HTML element and is placed inside the elements opening tag. ',
+      note: 'Note: If the image is not showing properly, click on the image.',
+      popupContent: `
+        We have seen few HTML tags and their usage like heading tags < h1 >, < h2 >, paragraph tag
+        < p > and other tags. We used them so far in their simplest form, but most of the HTML tags
+        can also have attributes, which are extra bits of information.
+        An attribute is used to define the characteristics of an HTML element and is placed inside the
+        element's opening tag. All attributes are made up of two parts: a name and a value:
+         The name is the property you want to set. For example, the paragraph < p > element
+        in the example carries an attribute whose name is align, which you can use to indicate
+        the alignment of paragraph on the page.
+        <br>
+      Core Attributes: <br>
+        The four core attributes that can be used on the majority of HTML elements (although not all)
+        are: <br>
+        1. Id : <br>
+        2. Title : <br>
+        3. Class : <br>
+        4. Style : <br>
+<br>
+         The value is what you want the value of the property to be set and always put within
+        quotations. The below example shows three possible values of align attribute: left,
+        center and right.
+        Attribute names and attribute values are case-insensitive. However, the World Wide Web
+        Consortium (W3C) recommends lowercase attributes/attribute values in their HTML 4
+        recommendation.    
+        
+         <a target='_blank' href="https://gist.github.com/user-attachments/assets/7255697c-5218-42b0-87b9-494ac50feee3">
+          <img src="https://gist.github.com/user-attachments/assets/7255697c-5218-42b0-87b9-494ac50feee3" />
+        </a>
+        `,
+    },
+    {
+      title: 'HTML Links - The target Attribute',
+      description: 'By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.',
+      note: 'Note: If the image is not showing properly, click on the image.',
+      popupContent: `
+        <h6>The target attribute specifies where to open the linked document.</h6>
+        <p>The target attribute can have one of the following values:</p>
+        <ul>
+          <li>_self - Default. Opens the document in the same window/tab as it was clicked</li>
+          <li>_blank - Opens the document in a new window or tab</li>
+          <li>_parent - Opens the document in the parent frame</li>
+          <li>_top - Opens the document in the full body of the window</li>
+        </ul>
+        <a target='_blank' href="https://gist.github.com/user-attachments/assets/5dfd52f6-ff4e-40a3-8a40-47eb24d08004">
+          <img src="https://gist.github.com/user-attachments/assets/5dfd52f6-ff4e-40a3-8a40-47eb24d08004" />
+        </a>
       `,
     },
     {
-      title: 'Services',
+      title: 'HTML – META TAGS ',
+      description: 'HTML lets you specify metadata - additional important information about a document in avariety of ways.',
+      note: 'Note: If the image is not showing properly, click on the image.',
+      popupContent: `
+        HTML lets you specify metadata - additional important information about a document in a
+        variety of ways. The META elements can be used to include name/value pairs describing
+        properties of the HTML document, such as author, expiry date, a list of keywords, document
+        author etc.<br>
+        The <meta> tag is used to provide such additional information. This tag is an empty element
+        and so does not have a closing tag but it carries information within its attributes.
+        You can include one or more meta tags in your document based on what information you
+        want to keep in your document but in general, meta tags do not impact physical appearance
+        of the document so from appearance point of view, it does not matter if you include them or
+        not.<br>
+        <h3>Adding Meta Tags to Your Documents</h3>
+        You can add metadata to your web pages by placing <meta> tags inside the header of the
+        document which is represented by < head> and < /head> tags. A meta tag can have
+        following attributes in addition to core attributes:
+
+         <a target='_blank' href="https://gist.github.com/user-attachments/assets/84fa443f-f345-4114-9796-4e4d56b44fd8">
+          <img src="https://gist.github.com/user-attachments/assets/84fa443f-f345-4114-9796-4e4d56b44fd8" />
+        </a>
+      `,
+    },
+    {
+      title: 'Thank You',
       description:
-        'Dive into the concept of services and dependency injection in Angular.',
+        'We love to hear how you felt after exploring all the content at the provided URL—your feedback is invaluable to us!',
       popupContent: `
-        <p>Services in Angular are used to encapsulate business logic and data access, promoting separation of concerns and reusability. Angular's dependency injection system provides a way to inject services into components or other services, allowing for better modularity and testability.</p>
-      `,
+        We value your feedback immensely! <br> 
+        After exploring all the content at here, we'd love to hear your thoughts. Could you kindly share your insights and experiences with us?
+       <br> Your perspective helps us improve and serve you better. 
+       <br> <h2> Thank you! </h2>
+            `,
     },
   ];
 
