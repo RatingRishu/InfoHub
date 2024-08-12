@@ -1,0 +1,23 @@
+.exciting-header {
+    font-size: 3rem; /* Large font size */
+    font-weight: bold; /* Bold text */
+    color: hsl(57.6deg 100% 50%); /* Vibrant color matching your theme */
+    text-align: center; /* Center the text */
+    margin-top: 20vh; /* Vertically center the heading */
+    letter-spacing: 2px; /* Slightly increase letter spacing */
+    text-transform: uppercase; /* Convert text to uppercase */
+    animation: pulse 2s infinite; /* Add a pulse animation */
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

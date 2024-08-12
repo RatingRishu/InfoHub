@@ -31,6 +31,8 @@ import { G2PlotComponent } from './Libraries-Topics/g2-plot/g2-plot.component';
 import { ThreeJsComponent } from './Libraries-Topics/three-js/three-js.component';
 import { GASPComponent } from './Libraries-Topics/gasp/gasp.component';
 import { PlacementPrepComponent } from './placement-prep/placement-prep.component';
+import { DefaultComponent } from './default/default.component';
+import { CloudComputingComponent } from './cloud-computing/cloud-computing.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +65,8 @@ import { PlacementPrepComponent } from './placement-prep/placement-prep.componen
     ThreeJsComponent,
     GASPComponent,
     PlacementPrepComponent,
+    DefaultComponent,
+    CloudComputingComponent,
   ],
   imports: [
     BrowserModule,

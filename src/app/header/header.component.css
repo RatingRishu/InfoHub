@@ -1,11 +1,11 @@
 .navbar {
-    padding: 0rem 1rem; /* Reduced padding */
+    padding: 0rem 1rem; 
 }
 
 .navbar-brand h4,
 .navbar-brand h5 {
-    margin: 0; /* Remove margins */
-    padding: 0rem 0; /* Reduced padding */
+    margin: 0; 
+    padding: 0rem 0; 
 }
 
 .links a {
@@ -15,7 +15,7 @@
     margin-left: 10px;
     font-size: larger;
     font-weight: bold;
-    padding: 15px 10px; /* Adjusted padding */
+    padding: 15px 10px; 
 }
 
 .links a:hover {
@@ -36,6 +36,7 @@
     .navbar-brand h5 {
         text-align: center;
     }
+    
 }
 
 @media (max-width: 321px) {
@@ -46,4 +47,8 @@
     .navbar-brand h5 {
         margin-left: 21%;
     }
+    .links a{
+        margin-left: 20px;
+    }
 }
+

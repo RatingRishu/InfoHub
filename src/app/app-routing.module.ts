@@ -25,6 +25,7 @@ import { G2PlotComponent } from './Libraries-Topics/g2-plot/g2-plot.component';
 import { ThreeJsComponent } from './Libraries-Topics/three-js/three-js.component';
 import { GASPComponent } from './Libraries-Topics/gasp/gasp.component';
 import { PlacementPrepComponent } from './placement-prep/placement-prep.component';
+import { CloudComputingComponent } from './cloud-computing/cloud-computing.component';
 
 const routes: Routes = [
   {path: '', component: BodyComponent},
@@ -49,7 +50,8 @@ const routes: Routes = [
   {path: 'librariestopics/g2plot', component: G2PlotComponent},
   {path: 'librariestopics/threejs', component: ThreeJsComponent},
   {path: 'librariestopics/gasp', component: GASPComponent},
-  {path: 'placementprep' , component: PlacementPrepComponent}
+  {path: 'placementprep' , component: PlacementPrepComponent},
+  {path: 'cloudcomputing' , component: CloudComputingComponent}
 
 ];
 

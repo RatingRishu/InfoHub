@@ -41,4 +41,8 @@ export class BodyComponent {
     console.log("test");
     this.router.navigateByUrl('/placementprep');
   }
+  onclickcloudcomputing() {
+    console.log("test");
+    this.router.navigateByUrl('/cloudcomputing');
+  }
 }
