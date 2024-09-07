@@ -26,6 +26,7 @@ import { ThreeJsComponent } from './Libraries-Topics/three-js/three-js.component
 import { GASPComponent } from './Libraries-Topics/gasp/gasp.component';
 import { PlacementPrepComponent } from './placement-prep/placement-prep.component';
 import { CloudComputingComponent } from './cloud-computing/cloud-computing.component';
+import { MongoDBComponent } from './BackendTopics/mongo-db/mongo-db.component';
 
 const routes: Routes = [
   {path: '', component: BodyComponent},
@@ -51,8 +52,8 @@ const routes: Routes = [
   {path: 'librariestopics/threejs', component: ThreeJsComponent},
   {path: 'librariestopics/gasp', component: GASPComponent},
   {path: 'placementprep' , component: PlacementPrepComponent},
-  {path: 'cloudcomputing' , component: CloudComputingComponent}
-
+  {path: 'cloudcomputing' , component: CloudComputingComponent},
+  {path: 'backend/mongodb' , component: MongoDBComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,122 @@
+   <div class="container">
+    <header>
+      <h1>MongoDB for Absolute Beginners</h1>
+    </header>
+  
+    <section>
+      <h2>Introduction</h2>
+      <p>A database Management System provides the mechanism to store and retrieve data. There are different kinds of database Management Systems:</p>
+      <ul>
+        <li>RDBMS (Relational Database Management Systems)</li>
+        <li>OLAP (Online Analytical Processing)</li>
+        <li>NoSQL (Not only SQL)</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Introduction to NoSQL</h2>
+      <h3>Limitations of RDBMS</h3>
+      <p>1. In relational databases, we need to define the structure and schema of data first and then only we can process the data.</p>
+      <p>2. Relational database systems provide consistency and integrity of data by enforcing ACID properties. However, these properties can cause significant performance overhead and make your database response very slow.</p>
+      <p>3. Most applications store their data in JSON format, and RDBMS doesn't provide a better way of performing operations such as create, insert, update, delete on this data.</p>
+    </section>
+  
+    <section>
+      <h2>What is NoSQL Database?</h2>
+      <p>NoSQL or non-relational databases provide a mechanism for storage and retrieval of data other than the tabular relations model used in relational databases. NoSQL database doesn't use tables for storing data; it is generally used to store big data and real-time web applications.</p>
+    </section>
+  
+    <section>
+      <h2>Why NoSQL Database?</h2>
+      <ul>
+        <li>Large volumes of structured, semi-structured, and unstructured data</li>
+        <li>Agile sprints, quick iteration, and frequent code pushes</li>
+        <li>Object-oriented programming that is easy to use and flexible</li>
+        <li>Efficient, scale-out architecture</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>SQL vs NoSQL</h2>
+      <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+          <th>SQL Database</th>
+          <th>NoSQL Database</th>
+        </tr>
+        <tr>
+          <td>SQL databases are primarily called RDBMS or Relational Databases</td>
+          <td>NoSQL databases are primarily called as Non-relational or distributed database</td>
+        </tr>
+        <tr>
+          <td>SQL databases are table-based databases</td>
+          <td>NoSQL databases can be document-based, key-value pairs, or graph databases</td>
+        </tr>
+        <tr>
+          <td>MySQL uses SQL to query the database</td>
+          <td>MongoDB uses BSON to query the database</td>
+        </tr>
+        <tr>
+          <td>Developed in the 1970s with a focus on reducing data duplication</td>
+          <td>Developed in the late 2000s with a focus on scaling and rapid application change</td>
+        </tr>
+      </table>
+    </section>
+  
+    <section>
+      <h2>Installation</h2>
+      <p>Commands for installing MongoDB:</p>
+      <ul>
+        <li>C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe --version</li>
+        <li>C:\Program Files\MongoDB\Server\4.4\bin\mongod.exe --version</li>
+        <li>C:\Program Files\MongoDB\Server\4.4\bin\mongod.exe</li>
+        <li>C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Create Database</h2>
+      <p>To create a database in MongoDB, use the following command:</p>
+      <pre><code>use database_name;</code></pre>
+    </section>
+  
+    <section>
+      <h2>Create Collection</h2>
+      <h3>Method 1: Insert to Create Collection</h3>
+      <p>In MongoDB, you need not create a collection before inserting a document. The collection is created on the fly:</p>
+      <pre><code>db.collection_name.insert(key: value, key: value…)</code></pre>
+  
+      <h3>Method 2: Create Collection with Options</h3>
+      <pre><code>db.createCollection(name, options)</code></pre>
+      <p>Example:</p>
+      <pre><code>db.createCollection("PGprograms");</code></pre>
+    </section>
+  
+    <section>
+      <h2>Documents</h2>
+      
+      field1: value1,
+      field2: value2,
+      ...
+      
+    </section>
+  
+    <section>
+      <h2>Deleting the Collection</h2>
+      <p>To drop a collection, first connect to the database in which you want to delete the collection and then type the following command to delete the collection:</p>
+      <pre><code>db.collection_name.drop()</code></pre>
+      <p>Note: Once you drop a collection, all the documents and the indexes associated with them will also be dropped. To preserve the indexes, use the <code>remove()</code> function that only removes the documents in the collection but doesn’t remove the collection itself and the indexes created on it.</p>
+      <p>Example:</p>
+      <pre><code>db.gla.drop();</code></pre>
+    </section>
+  
+    <section>
+      <h2>Create Documents</h2>
+      <p>MongoDB stores data records as BSON documents. BSON is a binary representation of JSON documents. MongoDB documents are composed of field-and-value pairs and have the following structure:</p>
+      
+      field1: value1,
+      field2: value2,
+      ...
+      
+    </section>
+  </div>
+  

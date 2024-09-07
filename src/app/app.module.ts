@@ -33,6 +33,7 @@ import { GASPComponent } from './Libraries-Topics/gasp/gasp.component';
 import { PlacementPrepComponent } from './placement-prep/placement-prep.component';
 import { DefaultComponent } from './default/default.component';
 import { CloudComputingComponent } from './cloud-computing/cloud-computing.component';
+import { MongoDBComponent } from './BackendTopics/mongo-db/mongo-db.component';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import { CloudComputingComponent } from './cloud-computing/cloud-computing.compo
     PlacementPrepComponent,
     DefaultComponent,
     CloudComputingComponent,
+    MongoDBComponent,
   ],
   imports: [
     BrowserModule,
