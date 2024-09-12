@@ -1,23 +1,122 @@
-.exciting-header {
-    font-size: 3rem; /* Large font size */
-    font-weight: bold; /* Bold text */
-    color: hsl(57.6deg 100% 50%); /* Vibrant color matching your theme */
-    text-align: center; /* Center the text */
-    margin-top: 20vh; /* Vertically center the heading */
-    letter-spacing: 2px; /* Slightly increase letter spacing */
-    text-transform: uppercase; /* Convert text to uppercase */
-    animation: pulse 2s infinite; /* Add a pulse animation */
-}
-
-/* Pulse animation */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
+.ezy__comingsoon15_4EjfbwXr {
+    /* Bootstrap variables */
+    --bs-body-color: #262830;
+    --bs-body-bg: #fff;
+  
+    /* Easy Frontend variables */
+    --ezy-theme-color: rgb(13, 110, 253);
+    --ezy-theme-color-rgb: 13, 110, 253;
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding: 150px 0;
+    z-index: 1;
+  }
+  @media (min-width: 768px) {
+    .ezy__comingsoon15_4EjfbwXr {
+      padding: 300px 0;
     }
-    50% {
-        transform: scale(1.05);
+  }
+  
+  .ezy__comingsoon15_4EjfbwXr-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(4, 4, 4, 0.6);
+    z-index: -1;
+  }
+  
+  /* heading and sub-heading */
+  .ezy__comingsoon15_4EjfbwXr-heading {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+  }
+  
+  @media (min-width: 768px) {
+    .ezy__comingsoon15_4EjfbwXr-heading {
+      font-size: 65px;
     }
-    100% {
-        transform: scale(1);
+  }
+  
+  .ezy__comingsoon15_4EjfbwXr-sub-heading {
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.8;
+  }
+  
+  .ezy__comingsoon15_4EjfbwXr form {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    overflow: hidden;
+    color: #fff;
+  }
+  
+  .ezy__comingsoon15_4EjfbwXr .form-control {
+    background-color: transparent !important;
+    padding: 15px 20px;
+  }
+  
+  .ezy__comingsoon15_4EjfbwXr .form-control:focus,
+  .ezy__comingsoon15_4EjfbwXr .form-control::-webkit-input-placeholder {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.6);
+    box-shadow: none;
+  }
+  
+  .ezy__comingsoon15_4EjfbwXr-btn {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    transition: 0.5s;
+  }
+  .ezy__comingsoon15_4EjfbwXr-btn:hover {
+    color: var(--ezy-theme-color);
+  }
+  
+  /* countdown */
+  .ezy__comingsoon15_4EjfbwXr-card {
+    background-color: var(--ezy-card-bg);
+    box-shadow: var(--ezy-card-shadow);
+    border-radius: 10px;
+    padding: 60px 0;
+  }
+  .ezy__comingsoon15_4EjfbwXr-countdown {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    min-width: 100px;
+  }
+  @media (min-width: 768px) {
+    .ezy__comingsoon15_4EjfbwXr-countdown {
+      top: 50%;
+      bottom: 15%;
+      left: 85%;
+      transform: translate(0, -50%);
     }
-}
+  }
+  @media (min-width: 991px) {
+    .ezy__comingsoon15_4EjfbwXr-countdown {
+      left: 90%;
+    }
+  }
+  .ezy__comingsoon15_4EjfbwXr-time {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 700;
+  }
+  .ezy__comingsoon15_4EjfbwXr-date {
+    opacity: 0.8;
+    font-size: 16px;
+  }
