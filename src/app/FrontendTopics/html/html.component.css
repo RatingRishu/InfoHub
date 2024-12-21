@@ -98,6 +98,7 @@
     overflow-x: hidden;
     transition: 0.2s;
     z-index: 1;
+    scrollbar-width: none;
   }
   
   .popup.show {

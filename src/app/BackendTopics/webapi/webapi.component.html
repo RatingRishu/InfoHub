@@ -1,4 +1,14 @@
 <!-- <div class="card-container">
+  <div class="card" #card6 (click)="showPopup(card6)">
+    <p class="card-title">What we learn in Web Api's</p>
+    <p class="small-desc">
+      Web Api's is a web framework that empowers developers to build fast,
+      reliable .
+    </p>
+    <div class="go-corner">
+      <div class="go-arrow">→</div>
+    </div>
+  </div>
     <div class="card" #card1 (click)="showPopup(card1)">
       <p class="card-title">What is Web Api's</p>
       <p class="small-desc">
@@ -63,8 +73,29 @@
       
     </div>
   </div>
-  
-     -->
+   -->
+    
 
 
-     <app-default></app-default>
+     <!-- <app-default></app-default> -->
+
+
+
+     <div class="card-container">
+      <div class="card" *ngFor="let card of cards" (click)="showPopup(card.title)">
+        <p class="card-title">{{ card.title }}</p>
+        <p class="small-desc">{{ card.description }}</p>
+        <div class="go-corner">
+          <div class="go-arrow">→</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="popup" [class.show]="isPopupVisible">
+      <div class="popup-content">
+        <span class="close" (click)="hidePopup()">&times;</span>
+        <h3>{{ popupHeader }}</h3>
+        <div [innerHTML]="popupContent"></div>
+      </div>
+    </div>
+    

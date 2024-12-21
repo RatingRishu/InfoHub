@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-
+import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { WebapiService } from './webapi.service'
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-webapi',
   templateUrl: './webapi.component.html',
@@ -10,22 +11,33 @@ export class WebapiComponent {
   popupHeader = '';
   popupDescription = '';
 
-  showPopup(card: HTMLDivElement) {
-    const cardTitleElement = card.querySelector('.card-title');
-    const cardDescriptionElement = card.querySelector('.small-desc');
+  popupContent = '';
+  cards: any;
+  constructor(private webapiservice: WebapiService, private renderer: Renderer2, private el: ElementRef, private router: Router) { }
+  ngOnInit(): void {
+    this.cards = this.webapiservice.getCards();
+  }
 
-    if (cardTitleElement instanceof HTMLElement) {
-      this.popupHeader = cardTitleElement.innerText;
+  showPopup(cardTitle: string) {
+    const card = this.webapiservice.getCardByTitle(cardTitle);
+    if (card) {
+      this.popupHeader = card.title;
+      this.popupContent = card.popupContent;
+      this.isPopupVisible = true;
+      setTimeout(() => this.applyRouterLink(), 0);
     }
-
-    if (cardDescriptionElement instanceof HTMLElement) {
-      this.popupDescription = cardDescriptionElement.innerText;
-    }
-    
-    this.isPopupVisible = true;
   }
 
   hidePopup() {
     this.isPopupVisible = false;
+  }
+
+  applyRouterLink() {
+    const dynamicLink = this.el.nativeElement.querySelector('#dynamicRouterLink');
+    if (dynamicLink) {
+      this.renderer.listen(dynamicLink, 'click', () => {
+        this.router.navigate(['/parent']);
+      });
+    }
   }
 }
