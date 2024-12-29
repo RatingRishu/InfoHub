@@ -1,0 +1,54 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  /* Ensures the body takes full viewport height */
+}
+
+/* Main content area (including header, sections) */
+.main-content {
+    flex: 1;  /* Allows this section to grow and fill available space */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4CAF50;  /* Green background similar to header */
+    color: white;
+    width: 100%;
+    margin-top: 20px;  /* Adds space above the footer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;  /* Adjust font size for readability */
+}
+
+/* Responsive Styles for Footer */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 16px;         /* Slightly larger text for readability on tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 14px;         /* Smaller text for mobile devices */
+    }
+}
+
+

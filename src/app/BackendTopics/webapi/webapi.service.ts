@@ -20,8 +20,7 @@ export class WebapiService {
       <p><strong>&nbsp;1.3 Web API specification</strong></p>
       <p><strong>&nbsp;1.4 Examples of calls</strong></p>
       <p><strong>&nbsp;1.5 Algorithm for handling a call</strong></p>
-      <p><strong>&nbsp;1.6 Customization code examples</strong></p>
-      <p><strong>&nbsp;1.7 Testing a Web API</strong></p>
+      <p><strong>&nbsp;1.6 Testing a Web API</strong></p>
 
       <h1>Integration with RESTful Web API Services</h1>
       <p><strong>&nbsp;2.1 Introduction</strong></p>
@@ -415,35 +414,58 @@ Content-type: application/json
     },
 
 
-    {
-      title: 'Customization code examples',
-      description:
-        'This section shows some examples of using the OnWebApi event.',
-      popupContent: `
-        Data Update soon......
-      `,
-    },
-
     // {
-    //   title: 'Modules',
+    //   title: 'Customization code examples',
     //   description:
-    //     'Angular Application is just a collection of many individual module.',
+    //     'This section shows some examples of using the OnWebApi event.',
     //   popupContent: `
-    //     <p>Angular is a Modular framework. Modularity is the property which measures the amount to which components connected together within a system can be separated as an individual unit and can function by themselves without depending on each other.</p>
-    //     <p>An angular application can contain several modules.There is minimum one module present in every angular application, which is <strong>'NgModule'</strong></p>
-    //     <ul>
-    //       <li>Module is a unit that groups Components, Pipes, Directives, and Services.</li>
-    //       <li>The default NgModule is AppModule and is present in app.module.ts file.When you launch the application, this is the module that gets bootstrapped.</li>
-    //       <li>You can also import and export functionalities from one module to the other for efficient and clean programming.</li>
-
-    //     </ul>
-    //     <img src="https://gist.github.com/user-attachments/assets/abf9d5ac-420e-45af-a0f5-ef357f10b089" width="450px">
-
-    //     <p>For More Info: </p>
-    //     <a href="https://angular-training-guide.rangle.io/modules/introduction" target="_blank">Angular Modules</a>
-       
+    //     Data Update soon......
     //   `,
     // },
+
+    {
+      title: 'Testing a Web API',
+      description:
+        'Web API classes can be tested using HTTP protocol, so you can use any client that can make HTTP requests.',
+      popupContent: `
+        <p>
+        Web API classes can be tested using the HTTP protocol, so you can use any client that can
+        make HTTP requests. However, we have also made available a Web application, created with Instant
+        Developer, that is especially useful for testing Web API applications. It can be downloaded
+        from this link. The application contains a single form. The top part of the form is used to
+        enter the request data (URL, method, header, parameters, etc.). The request is sent by
+        clicking the <strong>Send</strong> button.
+    </p>
+    <p>
+        The response data is displayed in the bottom part of the form. <br>
+        <img src="https://gist.github.com/user-attachments/assets/a330c649-3188-48c8-aea2-26efc1efff3c" width="450px">
+        If the value returned is
+        not what you expect, you can compile the server with file debugging to see how the request
+        was handled on the server side.
+    </p>
+       
+      `,
+    },
+    // {
+    //   title: 'Integration with RESTful Web API Services',
+    //   description:
+    //     'From here we Learn about Integration with RESTful Web API Services',
+    //   popupContent: `
+    //       InDe makes it possible to integrate RESTful services into your applications. There is a
+    //       convenient wizard for creating DO classes in the project corresponding to the entities of
+    //       the service. At runtime, these classes interact with the service to retrieve the necessary data
+    //       and perform CRUD operations. You can simply create forms based on these classes for
+    //       displaying and editing the resources.
+    //   `,
+    // },
+    {
+      title: 'Thank You ',
+      description:
+        'please share feedback from contact-us page ',
+      popupContent: `
+          <img src="https://gist.github.com/user-attachments/assets/88ecdce7-f453-4420-979a-103b1c144b68" width="450px">
+      `,
+    },
   ];
 
   getCards() {

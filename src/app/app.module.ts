@@ -34,6 +34,8 @@ import { PlacementPrepComponent } from './placement-prep/placement-prep.componen
 import { DefaultComponent } from './default/default.component';
 import { CloudComputingComponent } from './cloud-computing/cloud-computing.component';
 import { MongoDBComponent } from './BackendTopics/mongo-db/mongo-db.component';
+import { FeedbackPopupComponent } from './feedback-popup/feedback-popup.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +71,8 @@ import { MongoDBComponent } from './BackendTopics/mongo-db/mongo-db.component';
     DefaultComponent,
     CloudComputingComponent,
     MongoDBComponent,
+    FeedbackPopupComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

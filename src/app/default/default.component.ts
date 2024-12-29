@@ -12,7 +12,7 @@ export class DefaultComponent implements OnInit, OnDestroy {
   hours: number = 0;
   minutes: number = 0;
   seconds: number = 0;
-  targetDate: Date = new Date('2024-12-31T23:59:59'); // Set your target date here
+  targetDate: Date = new Date('2025-01-31T00:00:00'); // Set your target date here
   subscription!: Subscription;
 
   ngOnInit() {
@@ -31,7 +31,7 @@ export class DefaultComponent implements OnInit, OnDestroy {
     const timeRemaining = this.targetDate.getTime() - currentTime;
 
     if (timeRemaining > 0) {
-      this.days = Math.floor(timeRemaining / (10000 * 60 * 60 * 24));
+      this.days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
       this.hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       this.minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
       this.seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);

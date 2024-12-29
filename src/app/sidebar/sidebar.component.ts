@@ -6,7 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
+  isModalOpen = false;
 
+  // Show feedback form (open modal)
+  showFeedbackForm() {
+    this.isModalOpen = true;
+  }
+
+  // Hide feedback form (close modal)
+  hideFeedbackForm() {
+    this.isModalOpen = false;
+  }
 }
 
 // import { Component } from '@angular/core';

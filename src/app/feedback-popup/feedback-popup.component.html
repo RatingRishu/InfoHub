@@ -1,0 +1,34 @@
+<div class="modal" (click)="onBackgroundClick($event)">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <span class="close" (click)="close()">&times;</span>
+      <div class="form-card1">
+        <div class="form-card2">
+          <!-- Feedback Form -->
+          <form class="form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="e06f7a49-754f-47f1-a7ef-ba73b44ee6b1">
+  
+            <p class="form-heading">We Value Your Feedback</p>
+  
+            <!-- Name Field -->
+            <div class="form-field">
+              <input required placeholder="Your Name" class="input-field" type="text" name="name" />
+            </div>
+  
+            <!-- Email Field -->
+            <div class="form-field">
+              <input required placeholder="Your Email" class="input-field" type="email" name="email" />
+            </div>
+  
+            <!-- Message Field -->
+            <div class="form-field">
+              <textarea required placeholder="Your Feedback" cols="30" rows="3" class="input-field" name="message"></textarea>
+            </div>
+  
+            <!-- Submit Button -->
+            <button class="sendMessage-btn">Submit Feedback</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
