@@ -36,6 +36,7 @@ import { CloudComputingComponent } from './cloud-computing/cloud-computing.compo
 import { MongoDBComponent } from './BackendTopics/mongo-db/mongo-db.component';
 import { FeedbackPopupComponent } from './feedback-popup/feedback-popup.component';
 import { FooterComponent } from './footer/footer.component';
+import { TempComponent } from './temp/temp.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,7 @@ import { FooterComponent } from './footer/footer.component';
     MongoDBComponent,
     FeedbackPopupComponent,
     FooterComponent,
+    TempComponent,
   ],
   imports: [
     BrowserModule,

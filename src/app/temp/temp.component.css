@@ -1,0 +1,189 @@
+/* General Popup Styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(45deg, #ff004d, #ffcc00, #ff6a00);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 9999;
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    animation: popupAnim 1s ease-in-out, bounceAnim 1s ease-out;
+    backdrop-filter: blur(5px);
+    border: 5px solid rgba(255, 255, 255, 0.3);
+  
+    @media (max-width: 768px) {
+      width: 70%;
+    }
+  
+    @media (max-width: 480px) {
+      width: 90%;
+    }
+  
+    @keyframes popupAnim {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+      }
+      100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+  
+    /* Bounce effect */
+    @keyframes bounceAnim {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+      30% {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  
+    /* Glowing and glowing text */
+    .popup-content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff6a00, 0 0 30px #ffcc00;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+  
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 10px #fff, 0 0 30px #ff6a00, 0 0 40px #ffcc00;
+      }
+      100% {
+        text-shadow: 0 0 20px #fff, 0 0 50px #ff6a00, 0 0 60px #ffcc00;
+      }
+    }
+  
+    .popup-content p {
+      font-size: 1.5rem;
+      font-weight: normal;
+      margin-top: 10px;
+      animation: fadeIn 3s ease-in-out;
+    }
+  
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  
+    button {
+      background-color: #ff004d;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+  
+    button:hover {
+      background-color: #ff6a00;
+    }
+  }
+  
+  /* Confetti animation */
+  .confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 9998;
+    animation: confettiFall 3s linear infinite;
+  }
+  
+  @keyframes confettiFall {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
+  /* Stars Background */
+  .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://cdn.pixabay.com/photo/2017/12/14/05/29/celebration-3011265_960_720.png') repeat;
+    opacity: 0.1;
+    z-index: -1;
+    animation: starsAnim 1s infinite;
+  }
+  
+  @keyframes starsAnim {
+    0% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }
+  
+  /* Floating Bubbles Effect */
+  .bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+  
+  .bubbles::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    animation: bubbleAnim 3s infinite;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0s;
+    opacity: 0.5;
+  }
+  
+  @keyframes bubbleAnim {
+    0% {
+      transform: translateY(100vh) scale(0.5);
+      opacity: 0.5;
+    }
+    50% {
+      transform: translateY(10vh) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-50vh) scale(0.5);
+      opacity: 0;
+    }
+  }
+  
