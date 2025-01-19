@@ -1,4 +1,5 @@
-<meta name="description" content="InfoHub: Comprehensive and up-to-date descriptions of modern technologies for developers.">
+<meta name="description"
+  content="InfoHub: Comprehensive and up-to-date descriptions of modern technologies for developers.">
 <meta name="keywords" content="InfoHub, modern technologies, frontend, backend, software development, cloud computing">
 <meta name="Info-Hub" content="Frontend">
 
@@ -12,9 +13,9 @@
           <span class="circle circle3"></span>
           <span class="circle circle4"></span>
           <span class="circle circle5">
-           <h2>{{starCount}}</h2> 
+            <h2>{{starCount}}</h2>
           </span>
-  
+
         </div>
         <div class="glass"></div>
         <div class="content">
@@ -28,9 +29,9 @@
       </div>
     </div>
   </div>
- <h3 style="color: white; margin-top: 5%;">Contributors:</h3>
+  <h3 style="color: white; margin-top: 5%;">Contributors:</h3>
   <div *ngIf="contributors.length > 0">
-   
+
     <div>
       <span *ngFor="let contributor of contributors">
         <div class="profile-image">
@@ -47,10 +48,13 @@
   Resources:
 </h3>
 <div class="resources">
-
+  <div class="topics" (click)="onclickBlogs()">
+    <h3>Blogs</h3>
+    <h4>→</h4>
+  </div>
   <div class="topics" (click)="onclickFrontEnd()">
-    <h3 >Front End</h3>
-    <h4 >→</h4>
+    <h3>Front End</h3>
+    <h4>→</h4>
   </div>
   <div class="topics" (click)="onclickbackend()">
     <h3>Back End</h3>
@@ -58,10 +62,6 @@
   </div>
   <div class="topics" (click)="onclicklibraries()">
     <h3>Libraries</h3>
-    <h4>→</h4>
-  </div>
-  <div class="topics">
-    <h3>Resources</h3>
     <h4>→</h4>
   </div>
   <div class="topics" (click)="onclickcloudcomputing()">

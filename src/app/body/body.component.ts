@@ -45,4 +45,8 @@ export class BodyComponent {
     console.log("test");
     this.router.navigateByUrl('/cloudcomputing');
   }
+  onclickBlogs() {
+    console.log("test");
+    this.router.navigateByUrl('/blogs');
+  }
 }

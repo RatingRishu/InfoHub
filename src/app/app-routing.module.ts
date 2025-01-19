@@ -27,6 +27,7 @@ import { GASPComponent } from './Libraries-Topics/gasp/gasp.component';
 import { PlacementPrepComponent } from './placement-prep/placement-prep.component';
 import { CloudComputingComponent } from './cloud-computing/cloud-computing.component';
 import { MongoDBComponent } from './BackendTopics/mongo-db/mongo-db.component';
+import { BlogsComponent } from './blogs/blogs.component';
 
 const routes: Routes = [
   {path: '', component: BodyComponent},
@@ -53,7 +54,8 @@ const routes: Routes = [
   {path: 'librariestopics/gasp', component: GASPComponent},
   {path: 'placementprep' , component: PlacementPrepComponent},
   {path: 'cloudcomputing' , component: CloudComputingComponent},
-  {path: 'backend/mongodb' , component: MongoDBComponent}
+  {path: 'backend/mongodb' , component: MongoDBComponent},
+  {path: 'blogs' , component: BlogsComponent}
 ];
 
 @NgModule({

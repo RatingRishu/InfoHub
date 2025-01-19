@@ -37,6 +37,7 @@ import { MongoDBComponent } from './BackendTopics/mongo-db/mongo-db.component';
 import { FeedbackPopupComponent } from './feedback-popup/feedback-popup.component';
 import { FooterComponent } from './footer/footer.component';
 import { TempComponent } from './temp/temp.component';
+import { BlogsComponent } from './blogs/blogs.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +76,7 @@ import { TempComponent } from './temp/temp.component';
     FeedbackPopupComponent,
     FooterComponent,
     TempComponent,
+    BlogsComponent,
   ],
   imports: [
     BrowserModule,
