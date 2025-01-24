@@ -24,34 +24,34 @@ export class TempComponent {
     }, 10000);
   }
 
-  ngAfterViewInit(): void {
-    this.triggerConfetti();
-  }
+  // ngAfterViewInit(): void {
+  //   this.triggerConfetti();
+  // }
 
   // Trigger the confetti effect using canvas-confetti
-  triggerConfetti(): void {
-    const duration = 5 * 1000; // 10 seconds
-    const end = Date.now() + duration;
+  // triggerConfetti(): void {
+  //   const duration = 5 * 1000; // 10 seconds
+  //   const end = Date.now() + duration;
 
-    const interval = setInterval(() => {
-      confetti({
-        particleCount: 10,
-        angle: 60,
-        spread: 55,
-        origin: { x: 0, y: 0 }
-      });
-      confetti({
-        particleCount: 10,
-        angle: 120,
-        spread: 55,
-        origin: { x: 1, y: 0 }
-      });
+  //   const interval = setInterval(() => {
+  //     confetti({
+  //       particleCount: 10,
+  //       angle: 60,
+  //       spread: 55,
+  //       origin: { x: 0, y: 0 }
+  //     });
+  //     confetti({
+  //       particleCount: 10,
+  //       angle: 120,
+  //       spread: 55,
+  //       origin: { x: 1, y: 0 }
+  //     });
 
-      if (Date.now() > end) {
-        clearInterval(interval);
-      }
-    }, 250);
-  }
+  //     if (Date.now() > end) {
+  //       clearInterval(interval);
+  //     }
+  //   }, 250);
+  // }
 
   // Close the popup manually
   closePopup(): void {
