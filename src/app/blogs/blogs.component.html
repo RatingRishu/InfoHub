@@ -4,160 +4,17 @@
     rel="stylesheet">
 <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+ 
+<main *ngFor="let blog of allBlogs">
 
-<main>
-    <!-- <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white dark:bg-zinc-800">
-        <img class="w-full" src="https://gist.github.com/assets/99909689/4779c24f-d9f4-42f0-b6d0-9929ed34769a"
-            alt="Blog image" />
-        <div class="px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div>
-                    <div class="font-bold text-xl mb-2 text-zinc-900 dark:text-white">
-                        Nutrition during menopause
-                    </div>
-                    <p class="text-zinc-700 dark:text-zinc-300 text-base">
-                        A good variety of protein is not only important but tends to keep you fuller for longer, so
-                        ensure you incorporate protein into every meal and snack if you can. When choosing protein foods
-                        think about trying to include at least one portion of oily fish into your diet per week (salmon,
-                        trout, fresh tuna, mackerel).
-                    </p>
-                </div>
-                <div class="text-zinc-500 dark:text-zinc-400">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path
-                            d="M12 7a2 2 0 110-4 2 2 0 010 4zm0 2a2 2 0 110 4 2 2 0 010-4zm0 6a2 2 0 110 4 2 2 0 010-4z" />
-                    </svg>
-                </div>
-            </div>
-        </div>
-        <div class="px-6 py-4 flex justify-between items-center border-t border-zinc-200 dark:border-zinc-700">
-            <div class="flex items-center text-zinc-600 dark:text-zinc-400">
-                <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                </svg>
-                <span></span>
-            </div>
-            <div class="flex items-center text-zinc-600 dark:text-zinc-400">
-                <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M21 15a2 2 0 0 1-2 2H8l-5 5V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z" />
-                </svg>
-                <span>9</span>
-            </div>
-        </div>
-    </div> -->
-
-
+    <!-- Blogs using firebase -->
     <div class="card">
-        <img src="https://gist.github.com/user-attachments/assets/251b6145-2466-49b2-a779-f663d6fb008a" alt="">
+        <img [src]="blog.image" alt="some-image"/>
         <div class="card-content">
-            <h2>
-                Getting Started with Angular: A Complete Beginner’s Guide
-            </h2>
-            <p>
-                Discover the fundamentals of Angular, the popular framework by Google. Learn about its history,
-                features, and why it stands out for building scalable, dynamic web applications. Perfect for beginners
-                looking to dive into modern web development!
-            </p>
+          <h2>{{ blog.title }}</h2>
+          <p>{{ blog.description }}</p>
         </div>
     </div>
-
-
-<!-- Blogs using firebase -->
-    <div class="card">
-        <img [src]="image" alt="some-image"/>
-        <div class="card-content">
-          <h2>{{ title }}</h2>
-          <p>{{ description }}</p>
-        </div>
-    </div>
-      
-
-
-
-    <div class="card">
-        <img src="https://gist.github.com/assets/99909689/e90c7166-751a-46f3-b4ee-c00acdd1e224" alt="">
-        <div class="card-content">
-            <h2>
-                Card Heading
-            </h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia
-                explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores
-                harum? Dicta odio aut hic.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="https://gist.github.com/assets/99909689/5f72d4b7-aaab-47c4-93c2-f19b52a8c2ac" alt="">
-        <div class="card-content">
-            <h2>
-                Card Heading
-            </h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia
-                explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores
-                harum? Dicta odio aut hic.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="https://gist.github.com/assets/99909689/e90c7166-751a-46f3-b4ee-c00acdd1e224" alt="">
-        <div class="card-content">
-            <h2>
-                Card Heading
-            </h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia
-                explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores
-                harum? Dicta odio aut hic.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="https://gist.github.com/assets/99909689/5f72d4b7-aaab-47c4-93c2-f19b52a8c2ac" alt="">
-        <div class="card-content">
-            <h2>
-                Card Heading
-            </h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia
-                explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores
-                harum? Dicta odio aut hic.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="https://gist.github.com/assets/99909689/e90c7166-751a-46f3-b4ee-c00acdd1e224" alt="">
-        <div class="card-content">
-            <h2>
-                Card Heading
-            </h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia
-                explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores
-                harum? Dicta odio aut hic.
-            </p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="https://gist.github.com/assets/99909689/5f72d4b7-aaab-47c4-93c2-f19b52a8c2ac" alt="">
-        <div class="card-content">
-            <h2>
-                Card Heading
-            </h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem iste, voluptatum, quia
-                explicabo laboriosam rem adipisci voluptates cumque, veritatis atque nostrum corrupti ipsa asperiores
-                harum? Dicta odio aut hic.
-            </p>
-        </div>
-    </div>
-
-
+ 
+ 
 </main>

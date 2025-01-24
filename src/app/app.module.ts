@@ -38,6 +38,8 @@ import { FeedbackPopupComponent } from './feedback-popup/feedback-popup.componen
 import { FooterComponent } from './footer/footer.component';
 import { TempComponent } from './temp/temp.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { BlogFormComponent } from './blog-form/blog-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -77,11 +79,14 @@ import { BlogsComponent } from './blogs/blogs.component';
     FooterComponent,
     TempComponent,
     BlogsComponent,
+    BlogFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

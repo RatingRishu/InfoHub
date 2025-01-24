@@ -28,6 +28,7 @@ import { PlacementPrepComponent } from './placement-prep/placement-prep.componen
 import { CloudComputingComponent } from './cloud-computing/cloud-computing.component';
 import { MongoDBComponent } from './BackendTopics/mongo-db/mongo-db.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { BlogFormComponent } from './blog-form/blog-form.component';
 
 const routes: Routes = [
   {path: '', component: BodyComponent},
@@ -55,7 +56,9 @@ const routes: Routes = [
   {path: 'placementprep' , component: PlacementPrepComponent},
   {path: 'cloudcomputing' , component: CloudComputingComponent},
   {path: 'backend/mongodb' , component: MongoDBComponent},
-  {path: 'blogs' , component: BlogsComponent}
+  {path: 'blogs' , component: BlogsComponent},
+  {path: 'abc' , component: BlogFormComponent}
+
 ];
 
 @NgModule({

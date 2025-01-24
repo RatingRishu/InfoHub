@@ -1,0 +1,29 @@
+<!-- <div class="overlay">
+	<div class="popup"> -->
+		<!-- <h2>{{ EditMode ? 'Update the Task' : 'Create a New Task'}}</h2> -->
+		<!-- <a class="close" href="#" (click)="OnCloseForm()">&times;</a> -->
+		<div class="content">
+			<section class="container">
+                <form class="form" #form="ngForm" (ngSubmit)="onTaskSubmit(form)">
+                  <div class="input-box">
+                    <label>Title*</label>
+                    <input type="text" name="title" required ngModel/>
+                  </div>
+                  <div class="input-box">
+                    <label>Description*</label>
+                    <textarea rows="8" name="description" required ngModel></textarea>
+                  </div>
+                  <div class="column">
+                    <div class="input-box">
+                      <label>Image</label>
+                      <input type="text" name="image" placeholder="Add Image URL" required ngModel/>
+                      <!-- <input type="file" id="image" accept="image/*" name="image" required ngModel/> -->
+                    </div>
+                  </div>
+               
+                  <button type="submit">{{'Create Blog'}}</button>
+                </form>
+              </section>
+		</div>
+	<!-- </div>
+</div> -->
