@@ -1,4 +1,4 @@
-.overlay {
+/* .overlay {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -154,4 +154,148 @@
     .form :where(.gender-option, .gender) {
       row-gap: 15px;
     }
+  } */
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+
+
+::selection { 
+  color: #fff;
+  background: #9FBE5A;  
+}
+
+body {
+  width: 100vw;
+  height: 100%; 
+  padding-bottom: 50px;
+  overflow-x: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #16a085, #f4d03f) center / cover no-repeat;
+}
+
+h1 {
+  margin-bottom: 75px;
+  padding: 0 20vw;
+  font: 400 56px 'Roboto Slab', serif;
+  font-size: 56px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.form__contact {
+  max-width: 600px;
+  margin: 0 auto;
+  border-left: 30px solid white; 
+  border-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI0MS44NnB4IiBoZWlnaHQ9IjUyLjMyNnB4IiB2aWV3Qm94PSIwIDAgNDEuODYgNTIuMzI2IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MS44NiA1Mi4zMjYiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0wLDB2MjUuMTYzaDcuMDk3YzAuNTAxLTQuOTg5LDQuNzEyLTguODg0LDkuODMzLTguODg0YzUuNDU4LDAsOS44ODQsNC40MjUsOS44ODQsOS44ODRzLTQuNDI1LDkuODg0LTkuODg0LDkuODg0Yy01LjEyMSwwLTkuMzMyLTMuODk1LTkuODMzLTguODg0SDB2MjUuMTYzaDQxLjg2VjBIMHoiLz48L3N2Zz4=) 5% 100% repeat;
+  border-image-width: 0px 0px 0px 30px;
+  transform: translateY(100%);
+  animation: init 1s ease-in-out forwards;
+  
+  fieldset {
+    position: relative;
+    margin: 0;
+    padding: 30px 30px 40px 80px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    font: 24px 'Shadows Into Light', cursive;
+    background: #fff linear-gradient(rgba(0,0,0,.1) 1px, transparent 0) 0 20px / 100% 40px;
+    
+    &:after {
+      position: absolute; 
+      top: 0;
+      left: 50px;
+      content: '';
+      height: 100%;
+      width: 1px;
+      border-left: double #E08183;
+    }
+  } 
+  
+	p {
+    margin: 0 0 40px 0;
+    line-height: 40px;
+    color: #333;
+	}
+
+	span {
+		position: relative;
+		line-height: 40px;
+	}
+
+	button {
+		margin-top: 40px;
+    float: right;
+    border: none;
+    font-family: 'Shadows Into Light', cursive;
+    color: #E08183;
+    background: transparent;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+    
+    &:hover {
+      transform: translateX(10px)
+    }
+	}
+}
+
+.form__field {
+  display: inline;
+  color: #7DB665;
+  outline: none;
+
+  &:empty {
+    display: inline-block;
+    color: #DDD;
   }
+  
+
+  &:empty,
+  &:empty:focus {
+    &:before {
+      content: attr(data-placeholder);
+    }
+  }
+}
+
+
+svg {
+  display: none;
+}
+
+@keyframes init {
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes do-blur {
+  0% {
+    filter: url(#blur4);
+  }
+  
+  25% {
+    filter: url(#blur3);
+  }
+  
+  50% {
+    filter: url(#blur2);
+  }
+  
+  75% {
+    filter: url(#blur1);
+  }
+  
+  100% {
+    filter: url(#blur0); 
+  }
+}
+
+

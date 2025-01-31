@@ -2,7 +2,7 @@
 	<div class="popup"> -->
 		<!-- <h2>{{ EditMode ? 'Update the Task' : 'Create a New Task'}}</h2> -->
 		<!-- <a class="close" href="#" (click)="OnCloseForm()">&times;</a> -->
-		<div class="content">
+		<!-- <div class="content">
 			<section class="container">
                 <form class="form" #form="ngForm" (ngSubmit)="onTaskSubmit(form)">
                   <div class="input-box">
@@ -17,13 +17,47 @@
                     <div class="input-box">
                       <label>Image</label>
                       <input type="text" name="image" placeholder="Add Image URL" required ngModel/>
-                      <!-- <input type="file" id="image" accept="image/*" name="image" required ngModel/> -->
+                      <input type="file" id="image" accept="image/*" name="image" required ngModel/>
                     </div>
                   </div>
                
                   <button type="submit">{{'Create Blog'}}</button>
                 </form>
               </section>
-		</div>
+		</div> -->
 	<!-- </div>
 </div> -->
+
+<div class="wrapper">
+  <h1>Post your blog here</h1>
+  
+  <form class="form__contact" action="">
+    <fieldset>
+      <h3 style="font-weight: bold; font-size: larger;">Hey, Stranger!</h3><br>
+      <h3 style="font-weight: bold; font-size: larger;">Your blog topic <span class="form__field field--name" data-placeholder="Blog Topic" tabindex="1" contenteditable></span> please provide sort description on your topic <span class="form__field field--message" data-placeholder="sort description" tabindex="2" contenteditable></span>.</h3><br>
+      <h3 style="font-weight: bold; font-size: larger;">Brief Description <span class="form__field field--email" data-placeholder="Brief Description" tabindex="3" contenteditable></span>.</h3>
+      <h3 style="font-weight: bold; font-size: larger;">Add your image url <span class="form__field field--email" data-placeholder="image url" tabindex="3" contenteditable></span></h3><br>
+      <button style="font-weight: bold; font-size: larger;" type="submit" class="button button--xlarge" tabindex="4">Post Blog &#187;</button>
+    </fieldset>
+  </form>
+</div>
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+  <defs>
+    <filter id="blur0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0 0" />
+    </filter>
+    <filter id="blur1">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0 5" />
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0 10" />
+    </filter>
+    <filter id="blur3">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0 15" />
+    </filter>
+    <filter id="blur4">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0 20" />
+    </filter>
+  </defs>
+</svg>
