@@ -1,20 +1,21 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
-    rel="stylesheet">
-<link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
- 
-<main *ngFor="let blog of allBlogs">
-
-    <!-- Blogs using firebase -->
-    <div class="card">
-        <img [src]="blog.image" alt="some-image"/>
-        <div class="card-content">
-          <h2>{{ blog.title }}</h2>
-          <p>{{ blog.description }}</p>
+<section class="articles">
+    <article *ngFor="let blog of allBlogs">
+        <div class="article-wrapper">
+            <figure>
+                <img [src]="blog.image" alt="blog image" />
+            </figure>
+            <div class="article-body">
+                <h2>{{ blog.title }}</h2>
+                <p>{{ blog.description }}</p>
+                <a href="#" class="read-more">
+                    Read more <span class="sr-only">about {{ blog.title }}</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
         </div>
-    </div>
- 
- 
-</main>
+    </article>
+</section>
