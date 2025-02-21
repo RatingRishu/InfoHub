@@ -28,6 +28,9 @@
 	<!-- </div>
 </div> -->
 
+<!-- original format   -->
+
+<!-- 
 <div class="wrapper">
   <h1>Post your blog here</h1>
   
@@ -60,4 +63,31 @@
       <feGaussianBlur in="SourceGraphic" stdDeviation="0 20" />
     </filter>
   </defs>
-</svg>
+</svg> -->
+
+<!-- original format   -->
+
+<div class="wrapper">
+  <h1>Post your blog here</h1>
+  
+  <form class="form__contact" #form="ngForm" (ngSubmit)="onTaskSubmit(form)">
+    <fieldset>
+      <h3 style="font-weight: bold; font-size: larger;">Hey, Stranger!</h3><br>
+      <h3 style="font-weight: bold; font-size: larger;">
+        Your blog topic 
+        <input type="text" class="form__field field--name" name="title" placeholder="Blog Topic" required ngModel tabindex="1" style="font-family: inherit;"/>
+        please provide a short description on your topic 
+        <input type="text" class="form__field field--message" name="shortDescription" placeholder="Short description" required ngModel tabindex="2" style="font-family: inherit;"/>
+      </h3><br>
+      <h3 style="font-weight: bold; font-size: larger;">
+        Brief Description 
+        <textarea class="form__field field--email" name="description" placeholder="Brief Description" required ngModel tabindex="3" style="font-family: inherit;"></textarea>
+      </h3>
+      <h3 style="font-weight: bold; font-size: larger;">
+        Add your image URL 
+        <input type="text" class="form__field field--email" name="image" placeholder="Image URL" required ngModel tabindex="4" style="font-family: inherit;"/>
+      </h3><br>
+      <button style="font-weight: bold; font-size: larger; font-family: inherit;" type="submit" class="button button--xlarge" tabindex="5">Post Blog &#187;</button>
+    </fieldset>
+  </form>
+</div>
