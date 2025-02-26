@@ -70,7 +70,8 @@ export class BlogsComponent {
         next: (blogs) => {
           this.allBlogs = blogs.map(blog => ({
             ...blog,
-            shortDescription: blog.shortDescription || 'No short description available'
+            shortDescription: blog.shortDescription || 'No short description available',
+            // postedDate: blog.date || 'Date not available'
           }));
           console.log(this.allBlogs);
         },

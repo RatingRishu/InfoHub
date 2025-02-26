@@ -3,5 +3,6 @@ export class Blog {
   description: string = '';
   shortDescription: string = ''; 
   image: string = '';
+  date: string = '';
   id?: string;
 }

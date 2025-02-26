@@ -38,6 +38,7 @@
             </figure>
             <div class="article-body">
                 <h2>{{ blog.title }}</h2>
+                <p><strong>Posted Date:</strong><br> {{ blog.date || 'Date not available' }}</p>
                 <p><strong>Short Description:</strong><br> {{ blog.shortDescription }}</p>
                 <a class="read-more" (click)="openBlogModal(blog)">
                     Read more <span class="sr-only">about {{ blog.title }}</span>
