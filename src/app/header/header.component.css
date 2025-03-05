@@ -49,3 +49,8 @@
         margin-left: 0px;
     }
 }
+@media (max-width: 375px){
+    .container-fluid{
+        margin-left: 15%;
+    }
+}
