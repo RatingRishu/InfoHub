@@ -14,14 +14,40 @@ export class BlogFormComponent {
   blogsService: BlogService = inject(BlogService);
   blog: Blog = new Blog();
 
+  dialogMessage: string = '';
+  isDialogVisible: boolean = false;
+
 
   
+  // onTaskSubmit(formData: NgForm) {
+  //   console.log(formData.value);
+  //   this.blog = formData.value;
+  //   console.log(this.blog);
+  //   this.blogsService.createBlogs(this.blog);
+  //   // this.taskData.emit(formData.value);
+  // }
+
   onTaskSubmit(formData: NgForm) {
-    console.log(formData.value);
     this.blog = formData.value;
     console.log(this.blog);
-    this.blogsService.createBlogs(this.blog);
-    // this.taskData.emit(formData.value);
+    this.blogsService.createBlogs(this.blog).subscribe({
+      next: () => {
+        this.showDialog("Your blog has been posted successfully!");
+        formData.resetForm();
+      },
+      error: () => {
+        this.showDialog("Failed to post your blog. Please try again.");
+      }
+    });
+  }
+
+  showDialog(message: string) {
+    this.dialogMessage = message;
+    this.isDialogVisible = true;
+  }
+
+  closeDialog() {
+    this.isDialogVisible = false;
   }
 
 }

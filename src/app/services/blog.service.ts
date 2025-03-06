@@ -36,11 +36,9 @@ export class BlogService {
   }
   
   createBlogs(data: Blog) {
-    this.http.post<{ name: string }>(
+    return this.http.post<{ name: string }>(
       'https://infohub-613d6-default-rtdb.firebaseio.com/blog.json',
       data
-    ).subscribe(res => {
-      // console.log(res);
-    })
+    )
   }
 }

@@ -90,4 +90,12 @@
       <button style="font-weight: bold; font-size: larger; font-family: inherit;" type="submit" class="button button--xlarge" tabindex="5">Post Blog &#187;</button>
     </fieldset>
   </form>
+
+  <!-- Custom Dialog Component -->
+  <app-blog-confirmation-dialog 
+    [message]="dialogMessage" 
+    [isVisible]="isDialogVisible" 
+    (close)="closeDialog()">
+  </app-blog-confirmation-dialog>
+  
 </div>

@@ -40,6 +40,7 @@ import { TempComponent } from './temp/temp.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { BlogFormComponent } from './blog-form/blog-form.component';
 import { FormsModule } from '@angular/forms';
+import { BlogConfirmationDialogComponent } from './blog-confirmation-dialog/blog-confirmation-dialog.component';
 
 @NgModule({
   declarations: [
@@ -80,6 +81,7 @@ import { FormsModule } from '@angular/forms';
     TempComponent,
     BlogsComponent,
     BlogFormComponent,
+    BlogConfirmationDialogComponent,
   ],
   imports: [
     BrowserModule,
