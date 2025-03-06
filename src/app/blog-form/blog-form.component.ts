@@ -16,8 +16,12 @@ export class BlogFormComponent {
 
   dialogMessage: string = '';
   isDialogVisible: boolean = false;
+  todayDate: string = '';
 
 
+  constructor() {
+    this.todayDate = new Date().toISOString().split('T')[0]; // Set today's date in YYYY-MM-DD format
+  }
   
   // onTaskSubmit(formData: NgForm) {
   //   console.log(formData.value);
@@ -33,7 +37,8 @@ export class BlogFormComponent {
     this.blogsService.createBlogs(this.blog).subscribe({
       next: () => {
         this.showDialog("Your blog has been posted successfully!");
-        formData.resetForm();
+        // formData.resetForm();
+        formData.resetForm({ date: this.todayDate }); // Reset form with default date
       },
       error: () => {
         this.showDialog("Failed to post your blog. Please try again.");
@@ -48,6 +53,11 @@ export class BlogFormComponent {
 
   closeDialog() {
     this.isDialogVisible = false;
+  }
+
+  onDateChange(event: Event) {
+    const inputElement = event.target as HTMLInputElement;
+    this.blog.date = inputElement.value;
   }
 
 }

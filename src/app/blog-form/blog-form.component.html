@@ -67,7 +67,7 @@
 
 <!-- original format   -->
 
-<div class="wrapper">
+<!-- <div class="wrapper">
   <h1>Post your blog here</h1>
   
   <form class="form__contact" #form="ngForm" (ngSubmit)="onTaskSubmit(form)">
@@ -91,11 +91,147 @@
     </fieldset>
   </form>
 
-  <!-- Custom Dialog Component -->
   <app-blog-confirmation-dialog 
     [message]="dialogMessage" 
     [isVisible]="isDialogVisible" 
     (close)="closeDialog()">
   </app-blog-confirmation-dialog>
   
+</div> -->
+
+
+
+<!-- <div class="wrapper">
+  <h1 class="title">📝 Create Your Blog</h1>
+
+  <form class="blog-form" #form="ngForm" (ngSubmit)="onTaskSubmit(form)">
+    <div class="input-group">
+      <label>Blog Topic</label>
+      <input type="text" name="title" placeholder="Enter Blog Title" required ngModel />
+    </div>
+
+    <div class="input-group">
+      <label>Short Description</label>
+      <input type="text" name="shortDescription" placeholder="A brief summary of your blog" required ngModel />
+    </div>
+
+    <div class="input-group">
+      <label>Brief Description</label>
+      <textarea name="description" placeholder="Write your blog content..." required ngModel></textarea>
+    </div>
+
+    <div class="input-group">
+      <label>Image URL</label>
+      <input type="text" name="image" placeholder="Enter image link" required ngModel />
+    </div>
+
+    <button type="submit" class="submit-btn" [disabled]="form.invalid">🚀 Post Blog</button>
+  </form>
+
+  <app-blog-confirmation-dialog 
+    [message]="dialogMessage" 
+    [isVisible]="isDialogVisible" 
+    (close)="closeDialog()">
+  </app-blog-confirmation-dialog>
+</div> -->
+
+
+
+<div class="wrapper">
+  <h1 class="title">📝 Create Your Blog</h1>
+
+  <form class="blog-form" #form="ngForm" (ngSubmit)="onTaskSubmit(form)">
+    
+    <!-- Blog Topic -->
+    <div class="input-group">
+      <label>Blog Topic</label>
+      <input 
+        type="text" 
+        name="title" 
+        placeholder="Enter Blog Title" 
+        required 
+        #title="ngModel" 
+        ngModel />
+      <p class="error" *ngIf="title.invalid && title.touched">Blog topic is required.</p>
+    </div>
+
+    <!-- Short Description -->
+    <div class="input-group">
+      <label>Short Description</label>
+      <input 
+        type="text" 
+        name="shortDescription" 
+        placeholder="A brief summary of your blog" 
+        required 
+        minlength="10"
+        #shortDesc="ngModel"
+        ngModel />
+      <p class="error" *ngIf="shortDesc.invalid && shortDesc.touched">
+        Must be at least 10 characters long.
+      </p>
+    </div>
+
+    <!-- Brief Description -->
+    <div class="input-group">
+      <label>Brief Description</label>
+      <textarea 
+        name="description" 
+        placeholder="Write your blog content..." 
+        required 
+        minlength="20"
+        #desc="ngModel"
+        ngModel>
+      </textarea>
+      <p class="error" *ngIf="desc.invalid && desc.touched">
+        Must be at least 20 characters long.
+      </p>
+    </div>
+
+    <!-- Image URL -->
+    <div class="input-group">
+      <label>Image URL</label>
+      <input 
+        type="url" 
+        name="image" 
+        placeholder="Enter image link" 
+        required 
+        pattern="https?://.+"
+        #image="ngModel"
+        ngModel />
+      <p class="error" *ngIf="image.invalid && image.touched">
+        Enter a valid URL starting with http:// or https://.
+      </p>
+    </div>
+
+    <!-- Blog Date -->
+    <div class="input-group">
+      <label>Post Date</label>
+      <input 
+        type="date" 
+        name="date" 
+        required 
+        #date="ngModel"
+        [ngModel]="todayDate"
+        max="{{ todayDate }}"
+        (change)="onDateChange($event)" />
+      <p class="error" *ngIf="date.invalid && date.touched">
+        Please select a valid date.
+      </p>
+    </div>
+
+    <!-- Submit Button -->
+    <button 
+      type="submit" 
+      class="submit-btn" 
+      [disabled]="form.invalid">
+      🚀 Post Blog
+    </button>
+  </form>
+
+  <!-- Confirmation Dialog -->
+  <app-blog-confirmation-dialog 
+    [message]="dialogMessage" 
+    [isVisible]="isDialogVisible" 
+    (close)="closeDialog()">
+  </app-blog-confirmation-dialog>
 </div>
