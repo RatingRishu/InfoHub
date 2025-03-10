@@ -57,7 +57,7 @@ const routes: Routes = [
   {path: 'cloudcomputing' , component: CloudComputingComponent},
   {path: 'backend/mongodb' , component: MongoDBComponent},
   {path: 'blogs' , component: BlogsComponent},
-  {path: 'abc' , component: BlogFormComponent}
+  {path: 'form' , component: BlogFormComponent}
 
 ];
 
