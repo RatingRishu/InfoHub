@@ -2,24 +2,15 @@
 // import { BlogService } from '../services/blog.service';
 // import { Blog } from '../Models/blogs.model';
 
-
 // @Component({
 //   selector: 'app-blogs',
 //   templateUrl: './blogs.component.html',
 //   styleUrls: ['./blogs.component.css']
 // })
 // export class BlogsComponent {
-
-  
-
-//   title: string = '';
-//   description: string = '';
-//   image: string = '';
-
 //   allBlogs: Blog[] = [];
-
+//   selectedBlog: Blog | null = null; 
 //   blogsService: BlogService = inject(BlogService);
-  
 
 //   ngOnInit(): void {
 //     this.getData();
@@ -27,21 +18,35 @@
 
 //   getData() {
 //     this.blogsService.getAllBlogs()
-//     .subscribe({
-//       next: (blogs) => {
-//         this.allBlogs = blogs.map(blog => ({
-//           ...blog,
-//           shortDescription: blog.shortDescription || 'No short description available' // Ensure it is set
-//         }));
-//         console.log(this.allBlogs);
-//       },
-//       error: (error) => {
-//         console.log(error);
-//       }
-//     });
+//       .subscribe({
+//         next: (blogs) => {
+//           this.allBlogs = blogs.map(blog => ({
+//             ...blog,
+//             shortDescription: blog.shortDescription || 'No short description available',
+            
+//           }));
+//           console.log(this.allBlogs);
+//         },
+//         error: (error) => {
+//           console.log(error);
+//         }
+//       });
 //   }
+
+
+//   openBlogModal(blog: Blog) {
+//     this.selectedBlog = blog;
+//   }
+
   
+//   closeBlogModal() {
+//     this.selectedBlog = null;
+//   }
 // }
+
+
+
+
 
 
 
@@ -56,7 +61,9 @@ import { Blog } from '../Models/blogs.model';
 })
 export class BlogsComponent {
   allBlogs: Blog[] = [];
-  selectedBlog: Blog | null = null; // To store selected blog
+  selectedBlog: Blog | null = null; 
+  errorMessage: string = '';  
+  isLoading: boolean = true; // Track loading state
 
   blogsService: BlogService = inject(BlogService);
 
@@ -65,28 +72,30 @@ export class BlogsComponent {
   }
 
   getData() {
+    this.isLoading = true; // Start loading
+    this.errorMessage = ''; // Reset error message
+
     this.blogsService.getAllBlogs()
       .subscribe({
         next: (blogs) => {
           this.allBlogs = blogs.map(blog => ({
             ...blog,
-            shortDescription: blog.shortDescription || 'No short description available',
-            // postedDate: blog.date || 'Date not available'
+            shortDescription: blog.shortDescription || 'No short description available'
           }));
-          console.log(this.allBlogs);
+          this.isLoading = false; // Stop loading
         },
         error: (error) => {
-          console.log(error);
+          console.error(error);
+          this.isLoading = false; 
+          this.errorMessage = 'Oops! We couldn’t fetch the blogs. Please try again later.';
         }
       });
   }
 
-  // Function to open modal with blog details
   openBlogModal(blog: Blog) {
     this.selectedBlog = blog;
   }
 
-  // Function to close modal
   closeBlogModal() {
     this.selectedBlog = null;
   }

@@ -122,3 +122,36 @@ figure img {
       height: auto;
   }
 }
+
+
+.loading-message {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #007bff;
+  margin-top: 100px;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+.error-message button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.error-message button:hover {
+  background: #cc0000;
+}

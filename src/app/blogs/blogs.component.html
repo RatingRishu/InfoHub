@@ -1,36 +1,10 @@
-<!-- <section class="articles">
-    <article *ngFor="let blog of allBlogs">
-        <div class="article-wrapper">
-            <figure>
-                <img [src]="blog.image" alt="blog image" />
-            </figure>
-            <div class="article-body">
-                <h2>{{ blog.title }}</h2>
-                <p><strong>Short Description:</strong><br> {{ blog.shortDescription }}</p>
-                <a href="#" class="read-more">
-                    Read more <span class="sr-only">about {{ blog.title }}</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </article>
-</section>
+<!-- Loading Message -->
+<div *ngIf="isLoading" class="loading-message">
+    <p>⏳ Loading blogs... Please wait.</p>
+</div>
 
-
-<div *ngIf="selectedBlog" class="modal">
-    <div class="modal-content">
-        <span class="close" (click)="closeBlogModal()">&times;</span>
-        <h2>{{ selectedBlog.title }}</h2>
-        <img [src]="selectedBlog.image" alt="blog image" />
-        <p><strong>Short Description:</strong> {{ selectedBlog.shortDescription }}</p>
-        <p><strong>Full Description:</strong> {{ selectedBlog.description }}</p>
-    </div>
-</div> -->
-<section class="articles">
+<!-- Blog List -->
+<section class="articles" *ngIf="!isLoading && !errorMessage; else errorBlock">
     <article *ngFor="let blog of allBlogs">
         <div class="article-wrapper">
             <figure>
@@ -42,7 +16,6 @@
                 <p><strong>Short Description:</strong><br> {{ blog.shortDescription }}</p>
                 <a class="read-more" (click)="openBlogModal(blog)">
                     Read more
-                     <!-- <span class="sr-only">about {{ blog.title }}</span> -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd"
                             d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
@@ -53,6 +26,14 @@
         </div>
     </article>
 </section>
+
+<!-- Error Message Block -->
+<ng-template #errorBlock>
+    <div class="error-message">
+        <p>⚠️ {{ errorMessage }}</p>
+        <button (click)="getData()">🔄 Retry</button>
+    </div>
+</ng-template>
 
 <!-- Blog Modal Popup -->
 <div *ngIf="selectedBlog" class="modal">
