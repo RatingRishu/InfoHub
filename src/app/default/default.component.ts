@@ -12,7 +12,7 @@ export class DefaultComponent implements OnInit, OnDestroy {
   hours: number = 0;
   minutes: number = 0;
   seconds: number = 0;
-  targetDate: Date = new Date('2025-01-31T00:00:00'); // Set your target date here
+  targetDate: Date = new Date('2025-05-31T00:00:00'); // Set your target date here
   subscription!: Subscription;
 
   ngOnInit() {
