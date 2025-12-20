@@ -106,7 +106,7 @@ export class AngularService {
       `,
     },
 
-    
+
     {
       title: 'ng-onchange',
       description:
@@ -141,7 +141,193 @@ export class AngularService {
        
       `,
     },
+   {
+  title: 'Templates & Data Binding',
+  description: 'Understand how Angular binds data between component and template.',
+  popupContent: `
+    <p>Angular templates provide a declarative way to bind application data to the DOM. When the component state changes, the view updates automatically.</p>
+    <ul>
+      <li>Interpolation: {{ value }}</li>
+      <li>Property Binding: [property]</li>
+      <li>Event Binding: (event)</li>
+      <li>Two-way Binding: [(ngModel)]</li>
+    </ul>
+    <a href="https://angular.dev/guide/templates" target="_blank">Official Angular Docs – Templates & Data Binding</a>
+  `,
+},
+
+{
+  title: 'Directives',
+  description: 'Learn how directives manipulate the DOM in Angular.',
+  popupContent: `
+    <p>Directives are special classes that add behavior to elements in the DOM. They help control layout, appearance, and interaction.</p>
+    <ul>
+      <li><strong>Structural Directives:</strong> *ngIf, *ngFor, *ngSwitch</li>
+      <li><strong>Attribute Directives:</strong> ngClass, ngStyle</li>
+      <li><strong>Custom Directives:</strong> Create reusable DOM behavior</li>
+    </ul>
+    <a href="https://angular.dev/guide/directives" target="_blank">Official Angular Docs – Directives</a>
+  `,
+},
+
+{
+  title: 'Pipes',
+  description: 'Transform data in templates using pipes.',
+  popupContent: `
+    <p>Pipes transform displayed data in templates without changing the underlying value.</p>
+    <ul>
+      <li>Built-in pipes: date, currency, uppercase, lowercase</li>
+      <li>Async Pipe for Observables & Promises</li>
+      <li>Custom Pipes for reusable transformations</li>
+    </ul>
+    <a href="https://angular.dev/guide/pipes" target="_blank">Official Angular Docs – Pipes</a>
+  `,
+},
+
+{
+  title: 'Routing & Navigation',
+  description: 'Handle navigation and routing in Angular applications.',
+  popupContent: `
+    <p>Angular Router enables navigation between application views without full page reloads.</p>
+    <ul>
+      <li>RouterModule configuration</li>
+      <li>routerLink & router-outlet</li>
+      <li>Lazy Loading Modules</li>
+      <li>Route Guards for security</li>
+    </ul>
+    <a href="https://angular.dev/guide/routing" target="_blank">Official Angular Docs – Routing</a>
+  `,
+},
+
+{
+  title: 'Lifecycle Hooks',
+  description: 'Understand Angular component lifecycle.',
+  popupContent: `
+    <p>Lifecycle hooks let you run code at specific moments during a component’s creation, update, and destruction.</p>
+    <ul>
+      <li>ngOnInit – Initialization logic</li>
+      <li>ngOnChanges – Input property changes</li>
+      <li>ngAfterViewInit – View initialization</li>
+      <li>ngOnDestroy – Cleanup logic</li>
+    </ul>
+    <a href="https://angular.dev/guide/lifecycle-hooks" target="_blank">Official Angular Docs – Lifecycle Hooks</a>
+  `,
+},
+
+{
+  title: 'Forms',
+  description: 'Build forms efficiently in Angular.',
+  popupContent: `
+    <p>Angular forms provide a structured way to capture, validate, and process user input.</p>
+    <ul>
+      <li>Template-driven Forms for simple use cases</li>
+      <li>Reactive Forms for complex and scalable forms</li>
+      <li>FormControl, FormGroup, Validators</li>
+    </ul>
+    <a href="https://angular.dev/guide/forms" target="_blank">Official Angular Docs – Forms</a>
+  `,
+},
+
+{
+  title: 'HTTP & API Integration',
+  description: 'Communicate with backend services.',
+  popupContent: `
+    <p>The HttpClient service allows Angular apps to communicate with backend APIs using HTTP.</p>
+    <ul>
+      <li>GET, POST, PUT, DELETE requests</li>
+      <li>HTTP Interceptors</li>
+      <li>Centralized Error Handling</li>
+    </ul>
+    <a href="https://angular.dev/guide/http" target="_blank">Official Angular Docs – HTTP Client</a>
+  `,
+},
+
+{
+  title: 'RxJS & Observables',
+  description: 'Reactive programming in Angular.',
+  popupContent: `
+    <p>RxJS enables reactive programming by handling asynchronous data streams efficiently.</p>
+    <ul>
+      <li>Observable & Subscription</li>
+      <li>Operators: map, filter, switchMap</li>
+      <li>Subjects & BehaviorSubject</li>
+    </ul>
+    <a href="https://angular.dev/guide/rx-library" target="_blank">Official Angular Docs – RxJS</a>
+  `,
+},
+
+{
+  title: 'Change Detection',
+  description: 'Optimize performance with Angular change detection.',
+  popupContent: `
+    <p>Change detection keeps the view in sync with application data.</p>
+    <ul>
+      <li>Default Change Detection Strategy</li>
+      <li>OnPush Strategy for performance optimization</li>
+      <li>trackBy function in ngFor</li>
+    </ul>
+    <a href="https://angular.dev/guide/change-detection" target="_blank">Official Angular Docs – Change Detection</a>
+  `,
+},
+
+{
+  title: 'Lazy Loading',
+  description: 'Improve performance by loading modules on demand.',
+  popupContent: `
+    <p>Lazy loading reduces initial bundle size by loading modules only when required.</p>
+    <ul>
+      <li>Improves application startup time</li>
+      <li>Configured using Angular Router</li>
+    </ul>
+    <a href="https://angular.dev/guide/lazy-loading" target="_blank">Official Angular Docs – Lazy Loading</a>
+  `,
+},
+
+{
+  title: 'State Management',
+  description: 'Manage application state effectively.',
+  popupContent: `
+    <p>State management ensures predictable data flow across components.</p>
+    <ul>
+      <li>Services with BehaviorSubject</li>
+      <li>NgRx Store</li>
+      <li>Component Store</li>
+    </ul>
+    <a href="https://angular.dev/guide/signals" target="_blank">Official Angular Docs – State Management & Signals</a>
+  `,
+},
+
+{
+  title: 'Testing',
+  description: 'Write unit and integration tests in Angular.',
+  popupContent: `
+    <p>Angular provides built-in testing utilities to ensure application quality.</p>
+    <ul>
+      <li>Jasmine & Karma</li>
+      <li>TestBed</li>
+      <li>Component & Service testing</li>
+    </ul>
+    <a href="https://angular.dev/guide/testing" target="_blank">Official Angular Docs – Testing</a>
+  `,
+},
+
+{
+  title: 'Deployment',
+  description: 'Build and deploy Angular applications.',
+  popupContent: `
+    <p>Angular applications can be optimized and deployed for production environments.</p>
+    <ul>
+      <li>ng build</li>
+      <li>Environment configuration</li>
+      <li>Hosting on Firebase, Netlify, Vercel</li>
+    </ul>
+    <a href="https://angular.dev/guide/deployment" target="_blank">Official Angular Docs – Deployment</a>
+  `,
+}
+
+    
   ];
+
 
   getCards() {
     return this.cards;
