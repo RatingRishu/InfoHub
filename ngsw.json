@@ -1,0 +1,86 @@
+{
+  "configVersion": 1,
+  "timestamp": 1766239582913,
+  "index": "https://RatingRishu.github.io/InfoHub/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://RatingRishu.github.io/InfoHub/favicon.ico",
+        "https://RatingRishu.github.io/InfoHub/index.html",
+        "https://RatingRishu.github.io/InfoHub/main.a3864729ac1a5b8b.js",
+        "https://RatingRishu.github.io/InfoHub/manifest.webmanifest",
+        "https://RatingRishu.github.io/InfoHub/polyfills.5b04a50bbc71a48c.js",
+        "https://RatingRishu.github.io/InfoHub/runtime.fb107e6287aefb80.js",
+        "https://RatingRishu.github.io/InfoHub/scripts.0ac64f4db3baebc3.js",
+        "https://RatingRishu.github.io/InfoHub/styles.03a86a6a43c39219.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://RatingRishu.github.io/InfoHub/bootstrap-icons.70a9dee9e5ab72aa.woff",
+        "https://RatingRishu.github.io/InfoHub/bootstrap-icons.bfa90bda92a84a6a.woff2"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-cache",
+      "patterns": [
+        "https:\\/\\/your-api-url\\.com\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 50,
+      "maxAge": 86400000,
+      "timeoutMs": 5000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "https://RatingRishu.github.io/InfoHub/bootstrap-icons.70a9dee9e5ab72aa.woff": "d5831fd39baf13aff7626e483b9a089730f18604",
+    "https://RatingRishu.github.io/InfoHub/bootstrap-icons.bfa90bda92a84a6a.woff2": "020c3c6f9280a315e8425d7f92e15bcd0cdda1b2",
+    "https://RatingRishu.github.io/InfoHub/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://RatingRishu.github.io/InfoHub/index.html": "6dc00b130b9b02c8bec9935b809b4f1232ccda43",
+    "https://RatingRishu.github.io/InfoHub/main.a3864729ac1a5b8b.js": "7dc3a5f0829008c2750bc1da9713a7f0bbaed656",
+    "https://RatingRishu.github.io/InfoHub/manifest.webmanifest": "c73d0719432b543e896fb37c4199b935ac51b8e3",
+    "https://RatingRishu.github.io/InfoHub/polyfills.5b04a50bbc71a48c.js": "c1c857782868951f0c2138c580dd30ee992d805e",
+    "https://RatingRishu.github.io/InfoHub/runtime.fb107e6287aefb80.js": "476211881ee75cd15983329c39dc7cb239d764c4",
+    "https://RatingRishu.github.io/InfoHub/scripts.0ac64f4db3baebc3.js": "1a38d925235137852091c464051337b5949cdc05",
+    "https://RatingRishu.github.io/InfoHub/styles.03a86a6a43c39219.css": "e0cb032969c36e1a62ba938a587fc5804311bbe7"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

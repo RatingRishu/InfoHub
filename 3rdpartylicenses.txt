@@ -13,6 +13,9 @@ MIT
 @angular/router
 MIT
 
+@angular/service-worker
+MIT
+
 bootstrap
 MIT
 The MIT License (MIT)
