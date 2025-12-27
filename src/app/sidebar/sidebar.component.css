@@ -27,6 +27,11 @@ ul {
   font-weight: bold;
 }
 
+.col {
+  height: 100vh;
+  overflow-y: auto;
+}
+
   @media (max-width: 769px) {
     .dropdown{
         display: none;
