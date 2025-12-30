@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CssService } from './css.service';
 
 @Component({
   selector: 'app-css',
@@ -7,15 +8,32 @@ import { Component } from '@angular/core';
 })
 export class CssComponent {
 
-  isPopupVisible = false;
+   isPopupVisible = false;
+  // popupHeader = '';
+  // popupDescription = '';
   popupHeader = '';
-
-  showPopup(headerName: string) {
-    this.popupHeader = headerName;
-    this.isPopupVisible = true;
-  }
-
-  hidePopup() {
-    this.isPopupVisible = false;
-  }
+  popupContent = '';
+  cards: any;
+   constructor(private cssService: CssService) { }
+    ngOnInit() {
+      this.cards = this.cssService.getCards();
+  
+    }
+    showPopup(cardTitle: string) {
+      const card = this.cssService.getCardByTitle(cardTitle);
+      if (card) {
+        this.popupHeader = card.title;
+        this.popupContent = card.popupContent;
+  
+        if (card.note) {
+          this.popupContent += `<p style="color: red; margin-top: 10px;">${card.note}</p>`;
+        }
+  
+        this.isPopupVisible = true;
+      }
+    }
+  
+    hidePopup() {
+      this.isPopupVisible = false;
+    }
 }

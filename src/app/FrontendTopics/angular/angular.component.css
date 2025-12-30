@@ -1,234 +1,232 @@
-
+/* ===============================
+   CARD CONTAINER
+================================ */
 .card-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  
-  .card-title {
-    color: #262626;
-    font-size: 1.5em;
-    line-height: normal;
-    font-weight: 700;
-    margin-bottom: 0.5em;
-  }
-  
-  .small-desc {
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.5em;
-    color: #452c2c;
-  }
-  
-  .go-corner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 2em;
-    height: 2em;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    background: linear-gradient(135deg, #6293c8, #384c6c);
-    border-radius: 0 4px 0 32px;
-  }
-  
-  .go-arrow {
-    margin-top: -4px;
-    margin-right: -4px;
-    color: white;
-    font-family: courier, sans;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 16px;
+  /* padding: 20px; */
+}
+
+/* ===============================
+   CARD
+================================ */
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  min-height: 100px;
+  background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
+  border-radius: 12px;
+  padding: 24px 18px;
+  margin: 8px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Lift */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* ===============================
+   CARD HOVER BACKGROUND
+================================ */
+.card::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: -16px;
+  right: -16px;
+  background: linear-gradient(135deg, #364a60, #384c6c);
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: transform 0.4s ease-out;
+}
+
+.card:hover::before {
+  transform: scale(30);
+}
+
+/* ===============================
+   CARD CONTENT
+================================ */
+.card-title {
+  position: relative;
+  z-index: 1;
+  color: #1f2937;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  transition: color 0.4s ease;
+}
+
+.small-desc {
+  position: relative;
+  z-index: 1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #374151;
+  transition: color 0.4s ease;
+}
+
+.card:hover .card-title {
+  color: #ffffff;
+}
+
+.card:hover .small-desc {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ===============================
+   GO CORNER ARROW
+================================ */
+.go-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #6293c8, #384c6c);
+  border-radius: 0 12px 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.go-arrow {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: -4px;
+  margin-right: -4px;
+}
+
+/* ===============================
+   POPUP / SLIDE PANEL
+================================ */
+.popup {
+  position: fixed;
+  top: 0;
+  right: -520px;
+  width: 500px;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.25);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.popup::-webkit-scrollbar {
+  display: none;
+}
+
+.popup.show {
+  right: 0;
+}
+
+.popup-content {
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===============================
+   POPUP TEXT STYLING
+================================ */
+.popup-content h3,
+.popup-content h4 {
+  color: #4f46e5;
+  margin-bottom: 8px;
+}
+
+.popup-content hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #4f46e5, #22c55e);
+  margin: 10px 0 15px;
+}
+
+.popup-content p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 12px;
+}
+
+.popup-content ul {
+  padding-left: 18px;
+  margin-bottom: 14px;
+}
+
+.popup-content li {
+  margin-bottom: 6px;
+}
+
+.popup-content pre {
+  background: #0f172a;
+  color: #e5e7eb;
+  padding: 14px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 13px;
+  margin: 12px 0;
+}
+
+/* ===============================
+   CLOSE BUTTON
+================================ */
+.close {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #374151;
+  transition: color 0.2s;
+}
+
+.close:hover {
+  color: #ef4444;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
   .card {
-    display: block;
-    position: relative;
-    max-width: 300px;
-    max-height: 320px;
-    background-color: #f2f8f9;
-    border-radius: 10px;
-    padding: 2em 1.2em;
-    margin: 12px;
-    text-decoration: none;
-    z-index: 0;
-    overflow: hidden;
-    background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
-    font-family: Arial, Helvetica, sans-serif;
-    cursor: pointer;
+    max-width: 100%;
   }
-  
-  .card:before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: -16px;
-    right: -16px;
-    background: linear-gradient(135deg, #364a60, #384c6c);
-    height: 32px;
-    width: 32px;
-    border-radius: 32px;
-    transform: scale(1);
-    transform-origin: 50% 50%;
-    transition: transform 0.35s ease-out;
-  }
-  
-  .card:hover:before {
-    transform: scale(28);
-  }
-  
-  .card:hover .small-desc {
-    transition: all 0.5s ease-out;
-    color: rgba(255, 255, 255, 0.8);
-  }
-  
-  .card:hover .card-title {
-    transition: all 0.5s ease-out;
-    color: #ffffff;
-  }
-  
+
   .popup {
-    position: fixed;
-    right: -500px;
-    top: 0;
-    width: 500px;
-    height: 100%;
-    background-color: white;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-    overflow-x: hidden;
-    transition: 0.2s;
-    z-index: 1;
-    scrollbar-width: none;
+    width: 320px;
+    right: -340px;
   }
-  
+
   .popup.show {
     right: 0;
   }
-  
-  .popup-content {
-    padding: 20px;
-  }
-  
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 30px;
-    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px 16px;
   }
 
-  .close:hover {
-    color: #333;
+  .card-title {
+    font-size: 1.2rem;
   }
-  
-  .popup-content h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
+
+  .small-desc {
+    font-size: 0.9rem;
   }
-  
-  .popup-content p, .popup-content ul {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .popup-content ul {
-    padding-left: 20px;
-    list-style-type: disc;
-  }
-  
-  @media (max-width: 768px) {
-    .popup {
-      position: fixed;
-      right: -320px;
-      top: 0;
-      width: 320px;
-      height: 100%;
-      background-color: white;
-      box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-      overflow-x: hidden;
-      transition: 0.2s;
-      z-index: 1;
-    }
-}
-
-.code-editor {
-  max-width: 300px;
-  background-color: #1d1e22;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  padding: 2px;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 10px;
-}
-
-.title {
-  font-family: Lato, sans-serif;
-  font-weight: 900;
-  font-size: 14px;
-  letter-spacing: 1.57px;
-  color: rgb(212 212 212);
-}
-
-.icon {
-  width: 20px;
-  transition: .2s ease;
-}
-
-.icon:hover {
-  cursor: pointer;
-  border-radius: 50px;
-  background-color: #6e7281;
-}
-
-.editor-content {
-  margin: 0 10px 10px;
-  color: white;
-}
-
-.property {
-  margin-left: 30px;
-}
-
-.property:hover {
-  cursor: text;
-}
-
-.editor-content .color-0 {
-  color: rgb(86 156 214);
-}
-
-.editor-content .color-1 {
-  color: rgb(182 206 168);
-}
-
-.editor-content .color-2 {
-  color: rgb(156 220 254);
-}
-
-.editor-content .color-3 {
-  color: rgb(207 146 120);
-}
-
-.color-preview-1,.color-preview-2 {
-  height: 8px;
-  width: 8px;
-  border: 1px solid #fff;
-  display: inline-block;
-  margin-right: 3px;
-}
-
-.color-preview-1 {
-  background-color: #1d1e22;
-}
-
-.color-preview-1 {
-  background-color: rgba(0, 0, 0, 0.5);
 }
