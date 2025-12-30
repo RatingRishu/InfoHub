@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1767019639637,
+  "timestamp": 1767105127466,
   "index": "https://RatingRishu.github.io/InfoHub/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://RatingRishu.github.io/InfoHub/favicon.ico",
         "https://RatingRishu.github.io/InfoHub/index.html",
-        "https://RatingRishu.github.io/InfoHub/main.986e8483cd882d57.js",
+        "https://RatingRishu.github.io/InfoHub/main.590d2cd6fc1deb7b.js",
         "https://RatingRishu.github.io/InfoHub/manifest.webmanifest",
         "https://RatingRishu.github.io/InfoHub/polyfills.5b04a50bbc71a48c.js",
         "https://RatingRishu.github.io/InfoHub/runtime.fb107e6287aefb80.js",
@@ -56,8 +56,8 @@
     "https://RatingRishu.github.io/InfoHub/bootstrap-icons.70a9dee9e5ab72aa.woff": "d5831fd39baf13aff7626e483b9a089730f18604",
     "https://RatingRishu.github.io/InfoHub/bootstrap-icons.bfa90bda92a84a6a.woff2": "020c3c6f9280a315e8425d7f92e15bcd0cdda1b2",
     "https://RatingRishu.github.io/InfoHub/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://RatingRishu.github.io/InfoHub/index.html": "1bb7c68607f6650e63cb0f4329486ade8140ced7",
-    "https://RatingRishu.github.io/InfoHub/main.986e8483cd882d57.js": "65e8686e60d1090d276e4f523e38678af29c378e",
+    "https://RatingRishu.github.io/InfoHub/index.html": "a4f0be1bbf52aab2ae644c58307b9e00cc4c2658",
+    "https://RatingRishu.github.io/InfoHub/main.590d2cd6fc1deb7b.js": "93c575d525509f60c9655275dd1347b1654f879f",
     "https://RatingRishu.github.io/InfoHub/manifest.webmanifest": "c73d0719432b543e896fb37c4199b935ac51b8e3",
     "https://RatingRishu.github.io/InfoHub/polyfills.5b04a50bbc71a48c.js": "c1c857782868951f0c2138c580dd30ee992d805e",
     "https://RatingRishu.github.io/InfoHub/runtime.fb107e6287aefb80.js": "476211881ee75cd15983329c39dc7cb239d764c4",
